@@ -2,6 +2,8 @@ import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
 
+	target: 'static',
+
 	app: {
 		head: {
 			title: 'Desdemona Capital',
