@@ -1,0 +1,22 @@
+{
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview"
+	},
+	"devDependencies": {
+		"nuxt": "3.0.0-rc.6",
+		"sass": "^1.53.0",
+		"sass-loader": "^13.0.2"
+	},
+	"dependencies": {
+		"@vee-validate/zod": "^4.6.1",
+		"@vueuse/core": "^8.9.2",
+		"nuxt-icons": "^2.0.1",
+		"vee-validate": "^4.6.1",
+		"vue3-carousel": "^0.1.40",
+		"zod": "^3.17.3"
+	}
+}
