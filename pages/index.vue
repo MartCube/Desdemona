@@ -1,6 +1,6 @@
 <template>
 	<div class="page">
-		<Slider />
+		<!-- <Slider /> -->
 		<EquitySection />
 		<EstateSection />
 		<PressSection />
