@@ -1,8 +1,8 @@
 <template>
   <Carousel :settings="settings">
-    <Slide v-for="src in images" :key="slide">
+    <Slide v-for="src in images" :key="src">
       	<div class="slide">
-			<img :src="src" />
+			<img v-lazy="src"  />
 		</div>
     </Slide>
 
