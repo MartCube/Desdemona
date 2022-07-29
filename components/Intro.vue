@@ -23,12 +23,13 @@ defineProps<{
 
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 
 	h2 {
+		margin-bottom: 1rem;
 		text-transform: capitalize;
-		font-size: 1.5rem;
+		font-size: 1rem;
 		font-weight: 300;
 
         display: flex;
@@ -49,9 +50,9 @@ defineProps<{
 		}
 	}
 	h1 {
-		margin-top: 2rem;
+		margin-bottom: 5rem;
 		text-transform: uppercase;
-		font-size: 3rem;
+		font-size: 2.5rem;
 		font-weight: 700;
 
 	}

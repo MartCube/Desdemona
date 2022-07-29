@@ -70,7 +70,7 @@ export default defineComponent({
 
 .slide {
 	width: 100%;
-	min-height: 100vh;
+	height: calc(100vh - 6rem);
 	background-color: $grey;
 
 	color:  $text;
@@ -87,6 +87,7 @@ export default defineComponent({
 		width: 100%;
 		height: 100vh;
 		object-fit: cover;
+		object-position: bottom;
 	}
 }
 
