@@ -29,7 +29,7 @@ defineProps<{
 	flex-direction: column;
 
 	.image {
-		width: 20rem;
+		width: 100%;
 		height: 20rem;
 		position: relative;
 		background: $dark-grey;
@@ -42,10 +42,7 @@ defineProps<{
 
 			background: $white;
 			padding: 1rem 1.5rem;
-			box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
-
-			
-
+			box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);	
 
 			text-transform: uppercase;
 			text-decoration: none;
@@ -66,6 +63,23 @@ defineProps<{
 	}
 	p {
 		line-height: 1.5rem;
+	}
+}
+
+@media (max-width: 45rem) {
+	.member_card{
+		margin-bottom: 2rem;
+		.image .info{
+			h2{
+				font-size: 1rem;
+			}
+			span{
+				font-size: 0.75rem;
+			}
+		}
+		p{
+			font-size: 0.9rem;
+		}
 	}
 }
 </style>

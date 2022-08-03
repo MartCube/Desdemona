@@ -1,7 +1,9 @@
 <template>
 	<div class="page">
 		<Intro title="press" subtitle="milestones" />
-		<PressCard v-for="item in press" :data="item" />	
+		<div class="grid">
+			<PressCard v-for="item in press" :data="item" />
+		</div>	
 	</div>
 </template>
 
@@ -13,4 +15,22 @@ useHead({
 </script>
 
 <style lang="scss" scoped>
+.grid{
+	width: 100%;
+	max-width: 70rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 70rem) {
+	.grid{
+		padding: 5vw;
+		max-width: initial;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
 </style>

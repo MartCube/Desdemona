@@ -21,4 +21,12 @@ useHead({
 	display: flex;
 	justify-content: space-between;
 }
+@media (max-width: 70rem) {
+	.grid{
+		padding: 5vw;
+		max-width: initial;
+		flex-direction: column;
+		align-items: center;
+	}
+}
 </style>

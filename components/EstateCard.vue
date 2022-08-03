@@ -18,16 +18,14 @@ defineProps<{
 
 <style lang="scss" scoped>
 .estate_card{
-
 	width: 100%;
 	max-width: 20rem;
 	margin-bottom: 5rem;
 
 	display: flex;
 	flex-direction: column;
-
 	.image {
-		width: 20rem;
+		width: 100%;
 		height: 20rem;
 		margin-bottom: 2rem;
 		position: relative;
@@ -64,6 +62,13 @@ defineProps<{
 	}
 	p {
 		line-height: 1.5rem;
+	}
+}
+
+@media (max-width: 70rem) {
+	.estate_card{
+		max-width: 25rem;
+		margin-bottom: 2rem;
 	}
 }
 </style>

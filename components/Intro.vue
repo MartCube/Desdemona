@@ -54,7 +54,7 @@ defineProps<{
 		text-transform: uppercase;
 		font-size: 2.5rem;
 		font-weight: 700;
-
+		text-align: center;
 	}
 
 	&.white {
@@ -70,6 +70,32 @@ defineProps<{
 		}
 		h1{
 			color: $text;
+		}
+	}
+}
+
+@media (max-width: 70rem) {
+	.intro{
+		height: 50vh;
+		background-image: linear-gradient(90deg, hsl(203deg 64% 38%) 0%,hsl(205deg 52% 40%) 19%,hsl(206deg 43% 41%) 28%,hsl(207deg 36% 41%) 35%,hsl(208deg 31% 42%) 41%,hsl(208deg 25% 42%) 47%,hsl(209deg 21% 42%) 53%,hsl(210deg 16% 42%) 59%,hsl(210deg 12% 42%) 65%,hsl(211deg 8% 42%) 72%,hsl(211deg 4% 41%) 81%,hsl(0deg 0% 41%) 100%);
+		margin-bottom: 0;
+		justify-content: center;
+		h1{
+			margin: 0;
+		}
+		&.white {
+			background: $grey;
+		}
+	}
+}
+
+@media (max-width: 45rem) {
+	.intro{
+		h1{
+			font-size: 1.5rem;
+		}
+		h2{
+			font-size: 1rem;
 		}
 	}
 }

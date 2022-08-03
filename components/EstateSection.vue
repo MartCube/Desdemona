@@ -10,7 +10,9 @@
 					<h3>{{data.subtitle}}</h3>
 				</NuxtLink>
 			</div>	
-			<NuxtLink class="link" to='/real-estate'>learn more</NuxtLink>
+			<NuxtLink class="link" to='/real-estate'>
+				learn more <Icon name="arrow" />
+			</NuxtLink>
 		</div>
 	</section>
 </template>
@@ -22,13 +24,12 @@ import { estate } from "~/data"
 </script>
 
 <style lang="scss" scoped>
-.estate_section{
-
+.estate_section {
 	background: #eeeff2;
 	.wrap .grid{
 		width: 100%;
 		max-width: 70rem;
-		margin: 5rem 0;
+		// margin: 5rem 0;
 
 		display: flex;
 		justify-content: space-between;
@@ -65,6 +66,51 @@ import { estate } from "~/data"
 				font-weight: 400;
 				margin-bottom: 1rem;
 			}
+		}
+	}
+}
+
+@media (max-width: 60rem) {
+	.estate_section .wrap .grid .image{
+		width: 15rem;
+		height: 15rem;
+
+		
+	}
+}
+
+@media (max-width: 50rem) {
+	.estate_section .wrap .grid{
+		justify-content: flex-start	;
+
+		.image{
+			width: 50vw;
+			max-width: 12rem;
+			height: 12rem;
+			h2{
+				font-size: 1.2rem;
+			}
+			h3{
+				font-size: 0.8rem;
+			}
+
+			&:first-of-type{
+				margin-right: 5%;
+			}
+			&:last-of-type{
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 24rem) {
+	.estate_section .wrap .grid{
+		justify-content: flex-start	;
+
+		.image{
+			width: 10rem;
+			height: 10rem;
 		}
 	}
 }

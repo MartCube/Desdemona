@@ -19,7 +19,7 @@
 			<span class="error" v-show="submitCount > 0">{{ errors.message }}</span>
 		</div>
 		<button type="submit">
-			send message <NuxtIcon name="arrow"/>
+			send message <Icon name="arrow"/>
 		</button>
 
 	</form>
@@ -54,7 +54,7 @@ const onSubmit =handleSubmit(async(values, actions,) => {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 form {
 	width: 100%;
 	max-width: 80rem;
@@ -70,7 +70,8 @@ form {
 	position: relative;
 
 	.input_wrap{
-		width: 20rem;
+		width: 100%;
+		max-width: 20rem;
 		position: relative;
 		input {
 			width: 100%;
@@ -122,7 +123,6 @@ form {
 			font-size: 0.7rem;
 		}
 	}
-
 	button{
 		position: absolute;
 		bottom: 5rem;
@@ -141,7 +141,42 @@ form {
 		font-weight: 600;
 		text-transform: uppercase;	
 		cursor: pointer;
-	}
 
+		.icon{
+			fill:$white;
+			margin-left: 1rem;
+			width: 1rem;
+			height: 1rem;
+		}
+	}
+}
+
+@media (max-width: 70rem) {
+	form{
+		padding: 5%;
+		.input_wrap{
+			width: 30%;
+		}
+		button{
+			bottom: 5vw;
+			right: 5vw;
+		}
+	}
+}
+@media (max-width: 50rem) {
+	form{
+		.input_wrap{
+			width: 100%;
+			max-width: initial;
+			input{
+				margin-bottom: 5%;
+				height: 3rem;
+			}			
+		}
+		button{
+			width: 50%;
+			height: 3rem;
+		}
+	}
 }
 </style>

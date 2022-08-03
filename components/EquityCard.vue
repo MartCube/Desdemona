@@ -1,7 +1,7 @@
 <template>
 	<div class="equity_card">
 		<div class="image">
-			<img v-if="data.poster" :src="data.poster" >
+			<img v-if="data.poster" v-lazy="data.poster" >
 			<NuxtLink to="/">
 				learn more <NuxtIcon name="arrow"/>
 			</NuxtLink>
@@ -22,9 +22,7 @@ defineProps<{
 
 <style lang="scss" scoped>
 .equity_card{
-
 	width: 100%;
-	max-width: 70rem;
 	margin-bottom: 5rem;
 
 	display: flex;
@@ -35,6 +33,13 @@ defineProps<{
 		height: 30rem;
 		position: relative;
 		background: $dark-grey;
+
+		display: flex;
+		justify-content: center;
+		img{
+			width: 15rem;
+			height: 9rem;
+		}
 		
 		a {
 			position: absolute;
@@ -58,10 +63,43 @@ defineProps<{
 		justify-content: center;
 
 		h2 { 
-			margin-bottom: 1rem;
+			margin-bottom: 2rem;
+			font-weight: 600;
+			font-size: 2rem;
 		}
 		p {
 			line-height: 2rem;
+		}
+	}
+}
+
+@media (max-width: 70rem) {
+	.equity_card{
+		.image{
+			width: 50%;
+			height: 20rem;
+		}
+		.text{
+			width: 45%;
+		}
+	}
+}
+@media (max-width: 45rem) {
+	.equity_card{
+		flex-direction: column;
+		max-width: 20rem;
+		.image{
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+		.text{
+			width: 100%;
+			h2{
+				font-size: 1.5rem;
+			}
+			p{
+				font-size: 0.9rem;
+			}
 		}
 	}
 }

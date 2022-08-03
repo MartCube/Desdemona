@@ -4,21 +4,17 @@
 			<h1>desdemona</h1>
 			<h2>capital</h2>
 		</NuxtLink>
-		<div class="links">
+		<div class="links" :class="{ show: menuValue}">
 			<NuxtLink v-for="item in links" @click="menuValue = false" :to="item.url" class="link">
 				{{ item.name }}
 			</NuxtLink>
-			<NuxtLink class="contact" to="/contact">
+			<NuxtLink class="contact" to="/contact" @click="menuValue = false">
 				contact <NuxtIcon name="arrow"/>
 			</NuxtLink>
 		</div>
 		<div @click="menuToggle()" class="menu">
-			<span v-if="!menuValue">
-				menu
-			</span>
-			<span v-else>
-				close
-			</span>
+			<Icon v-if="!menuValue" name="bars" />
+			<Icon v-else name="xmark" />
 		</div>
 	</header>
 </template>
@@ -33,8 +29,10 @@ const [menuValue, menuToggle] = useToggle()
 
 <style lang="scss" scoped>
 header {
-	width: 100%;
+	width: 100vw;
 	max-width: 70rem;
+	height: 6rem;
+
 
 	position: relative;
 	display: flex;
@@ -43,7 +41,8 @@ header {
 	user-select: none;
 
 	.logo{
-		height: 6rem;
+		width: max-content;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -66,7 +65,6 @@ header {
 			}
 		}
 	}
-	
 	.links {
 		z-index: 2;
 		position: absolute;
@@ -134,13 +132,76 @@ header {
 	}
 	.menu{
 		display: none;
-		z-index: 3;
-		position: fixed;
-		top: 15%;
-		right: 15%;
-
+		z-index: 3;	
 		cursor: pointer;
 		user-select: none;
 	}
 }
+
+@media (max-width: 70rem) {
+	header {
+		padding: 5%;
+
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		.links{
+			display: none;
+			&.show{
+				display: flex;
+			}
+			transform: initial;
+			// position: fixed;
+			top: 6rem;
+			padding: 0 5%;
+			width: 100%;
+			height: calc(100vh - 12rem);
+			left: 0;
+			box-shadow: none;
+
+			align-items: flex-start;
+			flex-direction: column;
+			justify-content: space-around;
+			
+			.link{
+				width: max-content;
+				height: 2rem;
+				&::before{
+					display: none;
+				}				
+			}
+	
+		}
+		.menu {
+			display: initial;
+			width: 28px;
+			height: 28px;
+			svg {
+				width: 28px;
+				height: 28px;
+				&.bars{
+					fill: $primary;
+				}
+			}
+			
+		}
+	}
+}
+@media (max-width: 45rem) {
+	header {
+		height: 5rem;
+		.logo{
+			h1{
+				font-size: 1.5rem;
+			}
+			h2{
+				font-size: 1rem;
+			}
+		}
+		.links{
+			top: 5rem;
+		}
+	}
+}
+
 </style>

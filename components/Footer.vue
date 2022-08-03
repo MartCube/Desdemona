@@ -25,4 +25,10 @@ footer {
 		}
 	}
 }
+
+@media (max-width: 60rem) {
+footer p {
+	font-size: 0.8rem;
+}
+}
 </style>

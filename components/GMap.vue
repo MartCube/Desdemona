@@ -18,8 +18,15 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .map{
-	width: 70rem;
+	width: 100%;
+	max-width: 70rem;
 	height: 40rem;
-	margin: 5rem;
+	margin: 5rem 0;
+}
+@media (max-width: 70rem) {
+	.map{
+		padding:5%;
+		margin: 0;
+	}
 }
 </style>

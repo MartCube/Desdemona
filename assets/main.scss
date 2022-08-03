@@ -64,7 +64,7 @@ body {
 		}
 
 		.title {
-			margin-bottom: 2rem;
+			margin-bottom: 5rem;
 
 			text-transform: uppercase;
 			font-size: 2.5rem;
@@ -72,18 +72,65 @@ body {
 		}
 
 		.link {
-			display: inline-block;
+			margin-top: 5rem;
 			border: none;
 			background: $primary;
 			padding: 1rem 2rem;
 
+			width: max-content;
+			display: flex;
+
+
 			color: $white;
-			font-size: 1rem;
+			font-size: .75rem;
 			font-weight: 600;
 			text-transform: uppercase;
 			text-decoration: none;
+
+			svg {
+				margin-left: 1rem;
+				width: .75rem;
+				height: .75rem;
+				fill: $white;
+			}
 		}
 	}
+}
 
+@media (max-width: 60rem) {
 
+	.equity_section,
+	.estate_section,
+	.press_section {
+
+		padding: 5rem 5%;
+
+	}
+}
+
+@media (max-width: 45rem) {
+
+	.equity_section,
+	.estate_section,
+	.press_section {
+
+		padding: 4rem 5%;
+
+		.wrap {
+			.subtitle {
+				margin-bottom: 1rem;
+				font-size: 0.8rem;
+			}
+
+			.title {
+				margin-bottom: 2rem;
+				font-size: 2rem;
+			}
+
+			.link {
+				margin-top: 2rem;
+				padding: 1rem 1.5rem;
+			}
+		}
+	}
 }

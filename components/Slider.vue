@@ -1,5 +1,6 @@
 <template>
-  <Carousel :settings="settings">
+  <div>
+	<Carousel :settings="settings">
     <Slide v-for="src in images" :key="src">
       	<div class="slide">
 			<img v-lazy="src"  />
@@ -10,6 +11,7 @@
 		<Navigation/>
     </template>
   </Carousel>
+  </div>
 </template>
 
 <script>
@@ -41,7 +43,6 @@ export default defineComponent({
 .carousel {
 	width: 100vw;
 	
-
 	.carousel__prev,
 	.carousel__next {
 		width: 3rem;
@@ -65,11 +66,8 @@ export default defineComponent({
 	
 }
 
-
-
-
 .slide {
-	width: 100%;
+	width: 100vw;
 	height: calc(100vh - 6rem);
 	background-color: $grey;
 
@@ -85,9 +83,23 @@ export default defineComponent({
 	
     img{
 		width: 100%;
-		height: 100vh;
+		height: 100%;
 		object-fit: cover;
 		object-position: bottom;
+	}
+}
+
+@media (max-width: 60rem) {
+	.carousel {
+		.carousel__prev {
+			left: 10%;
+		}
+		.carousel__next {
+			right: 10%;
+		}
+	}
+	.slide{
+		height: calc(50vh - 6rem);
 	}
 }
 

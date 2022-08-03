@@ -3,7 +3,7 @@
 		<div class="media">
 			<div v-if="data.video" class="video">
 				<iframe 
-					width="640" 
+					width="100%" 
 					height="360" 
 					:src="data.video" 
 					title="YouTube video player" 
@@ -76,6 +76,28 @@ defineProps<{
 		p{
 			line-height: 1.5rem;
 			
+		}
+	}
+}
+
+@media (max-width: 45rem) {
+	.press_card{
+		margin-bottom: 2rem;
+		.media{
+			height: 18rem;
+			iframe{
+				height: 18rem;
+			}
+		}
+		.info{
+			h2{
+				font-size: 1.5rem;
+				
+			}
+			p{
+				font-size: 0.9rem;
+				
+			}
 		}
 	}
 }
