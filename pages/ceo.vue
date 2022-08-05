@@ -1,6 +1,6 @@
 <template>
 	<div class="page">
-		<div class="wrap">
+		<div class="wrap first">
 			<div class="text">
 				<h3>who we are</h3>
 				<h1>Desdemona</h1>
@@ -11,7 +11,7 @@
 			</div>
 			<div class="image"></div>
 		</div>
-		<div class="wrap">
+		<div class="wrap reverse">
 			<div class="image"></div>
 			<div class="text">
 				<p>While the Internet gold rush is typically recognized as beginning in 1995, the beginnings of Christian and Michael’s company date back as early of 1985. For this reason, when the mainstream popularity of the Internet finally broke in the mid 90s, Telebook was already way ahead of the industry curve for e-commerce, leading Amazon to take notice. In early 1998, Amazon made an offer to buy out Telebook, and in April of 1998, Amazon.com acquired Telebook in a stock-swap.</p>
@@ -40,7 +40,6 @@ useHead({
 .page{
 	max-width: 70rem;
 	margin-top: 10rem;
-	
 	.wrap{
 		width: 100%;
 		display: flex;
@@ -48,7 +47,7 @@ useHead({
 		align-items: center;
 		margin-bottom: 2.5rem;
 		.text{
-			width: 32.5rem;
+			max-width: 32.5rem;
 			color: $title;
 			h3 { 
 				margin-bottom: 1rem;
@@ -78,10 +77,8 @@ useHead({
 				}
 			}
 			h2{
-				margin-bottom: 1rem;
-
+				margin-bottom: 2rem;
 				text-transform: uppercase;
-
 				font-size: 2rem;	
 				font-weight: 300;
 				&::first-letter{
@@ -103,7 +100,8 @@ useHead({
 			}
 		}
 		.image{
-			width: 35rem;
+			width: 100%;
+			max-width: 35rem;
 			height: 30rem;
 			background: $dark-grey;
 		}
@@ -116,9 +114,74 @@ useHead({
 
 		p {
 			line-height: 2rem;
-				margin-bottom: 2rem;
+			margin-bottom: 2rem;
 		}
 	}
-	
+}
+
+@media (max-width: 70rem) {
+	.page{
+		margin: 0;
+		max-width: initial;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.wrap{
+			margin: 0;
+			padding: 0 5vw;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+
+			&.reverse{
+				flex-direction: column-reverse;
+			}
+			.text{
+				width:100%;
+				max-width: initial;
+			}
+			.image,
+			.video {
+				width:100%;
+				height: 25rem;
+				max-width: initial;
+				margin: 2rem 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 40rem) {
+.page{
+	.wrap{
+		&.first{
+			background: $grey;
+		}
+		.image,
+		.video {
+			height: 15rem;
+		}
+		.text{
+			h3{
+				margin-top: 2rem;
+				margin-bottom: 1rem;
+				font-size: 1rem;
+			}
+			h1{
+				font-size: 2rem;
+				
+			}
+			h2{
+				font-size: 1.5rem;
+				
+			}
+			p{
+				font-size: 0.9rem;
+			}
+		}
+
+	}
+}
 }
 </style>

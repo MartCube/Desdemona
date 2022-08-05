@@ -3,7 +3,7 @@
 		<div class="image">
 			<img v-if="data.poster" v-lazy="data.poster" >
 			<NuxtLink to="/">
-				learn more <NuxtIcon name="arrow"/>
+				learn more <Icon name="arrow"/>
 			</NuxtLink>
 		</div>
 		<div class="text">
@@ -54,6 +54,15 @@ defineProps<{
 			color: $white;
 			font-size: 0.8rem;
 			font-weight: 700;
+			
+			display: flex;
+			align-items: center;
+			.icon{
+				fill: $white;
+				width: 0.8rem;
+				height: 0.8rem;
+				margin-left: 0.8rem;
+			}
 		}
 	}
 	.text {

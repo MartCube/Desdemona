@@ -8,7 +8,6 @@
 					:src="data.video" 
 					title="YouTube video player" 
 					frameborder="0" 
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 					/>
 			</div>
 			<div v-if="data.poster" class="poster">

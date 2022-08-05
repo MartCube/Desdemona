@@ -6,10 +6,10 @@
 
 
 <script setup lang="ts">
-import icons from '~/public/icons.json'
+import icons from '~/assets/icons.json'
 
 defineProps<{
-	name: string;
+	name: string
 }>();
 
 function getPath(value:string) {

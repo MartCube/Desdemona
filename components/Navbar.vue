@@ -9,7 +9,7 @@
 				{{ item.name }}
 			</NuxtLink>
 			<NuxtLink class="contact" to="/contact" @click="menuValue = false">
-				contact <NuxtIcon name="arrow"/>
+				contact <Icon name="arrow"/>
 			</NuxtLink>
 		</div>
 		<div @click="menuToggle()" class="menu">
@@ -127,7 +127,15 @@ header {
 			font-size: 1rem;
 			font-weight: 600;
 			text-transform: uppercase;
-			text-decoration: none;	
+			text-decoration: none;
+
+			display: flex;
+			.icon {
+				fill: $white;
+				width: 1rem;
+				height: 1rem;
+				margin-left: 1rem;
+			}
 		}
 	}
 	.menu{
