@@ -29,8 +29,8 @@ defineProps<{
 	justify-content: space-between;
 
 	.image {
-		width: 35rem;
-		height: 30rem;
+		width: 50%;
+		height: 20rem;
 		position: relative;
 		background: $dark-grey;
 
@@ -66,7 +66,7 @@ defineProps<{
 		}
 	}
 	.text {
-		max-width: 30rem;
+		width: 45%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -84,12 +84,13 @@ defineProps<{
 
 @media (max-width: 70rem) {
 	.equity_card{
-		.image{
-			width: 50%;
-			height: 20rem;
-		}
 		.text{
-			width: 45%;
+			h2{
+				font-size: 1.5rem;
+			}
+			p{
+				font-size: 0.9rem;
+			}
 		}
 	}
 }
@@ -103,12 +104,6 @@ defineProps<{
 		}
 		.text{
 			width: 100%;
-			h2{
-				font-size: 1.5rem;
-			}
-			p{
-				font-size: 0.9rem;
-			}
 		}
 	}
 }

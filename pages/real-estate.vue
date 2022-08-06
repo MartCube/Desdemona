@@ -17,15 +17,19 @@ useHead({
 <style lang="scss" scoped>
 .grid{
 	width: 100%;
-	max-width: 70rem;
+	max-width: $width;
 	display: flex;
 	justify-content: space-between;
 }
 
-@media (max-width: 70rem) {
+@media (max-width: $width) {
 	.grid{
-		padding: 5vw;
-		max-width: initial;
+		padding: 5vw 5vw 0 5vw;
+	}
+}
+
+@media (max-width: 45rem) {
+	.grid{
 		flex-direction: column;
 		align-items: center;
 	}

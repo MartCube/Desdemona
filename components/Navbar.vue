@@ -30,7 +30,7 @@ const [menuValue, menuToggle] = useToggle()
 <style lang="scss" scoped>
 header {
 	width: 100vw;
-	max-width: 70rem;
+	max-width: $width;
 	height: 6rem;
 
 
@@ -146,7 +146,7 @@ header {
 	}
 }
 
-@media (max-width: 70rem) {
+@media (max-width: $width) {
 	header {
 		padding: 5%;
 
@@ -163,7 +163,7 @@ header {
 			top: 6rem;
 			padding: 0 5%;
 			width: 100%;
-			height: calc(100vh - 12rem);
+			height: fit-content;
 			left: 0;
 			box-shadow: none;
 
@@ -174,6 +174,7 @@ header {
 			.link{
 				width: max-content;
 				height: 2rem;
+				margin: 1rem 0;
 				&::before{
 					display: none;
 				}				

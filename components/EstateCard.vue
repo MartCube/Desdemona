@@ -18,25 +18,18 @@ defineProps<{
 
 <style lang="scss" scoped>
 .estate_card{
-	width: 100%;
-	max-width: 20rem;
+	width: 30%;
 	margin-bottom: 5rem;
 
 	display: flex;
 	flex-direction: column;
 	.image {
 		width: 100%;
-		height: 20rem;
+		height: 18rem;
 		margin-bottom: 2rem;
 		position: relative;
 		background: $dark-grey;
-		background-image: linear-gradient(
-  0deg,
-  hsl(203deg 64% 38%) 0%,
-  hsl(207deg 32% 41%) 39%,
-  hsl(210deg 15% 42%) 61%,
-  hsl(0deg 0% 41%) 100%
-);
+		background-image: linear-gradient(0deg,hsl(203deg 64% 38%) 0%,hsl(207deg 32% 41%) 39%,hsl(210deg 15% 42%) 61%,hsl(0deg 0% 41%) 100%);
 
 		display: flex;
 		flex-direction: column;
@@ -65,10 +58,23 @@ defineProps<{
 	}
 }
 
-@media (max-width: 70rem) {
+@media (max-width: $width) {
 	.estate_card{
-		max-width: 25rem;
 		margin-bottom: 2rem;
+		.image{
+			height: 15rem;
+		}
+		
+		p{
+			font-size: 0.9rem;
+		}
+	}
+}
+
+@media (max-width: 45rem) {
+	.estate_card{
+		width: 100%;
+		max-width: 15rem;
 	}
 }
 </style>

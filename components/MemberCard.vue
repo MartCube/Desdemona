@@ -20,8 +20,7 @@ defineProps<{
 
 <style lang="scss" scoped>
 .member_card{
-	width: 100%;
-	max-width: 20rem;
+	width: 30%;
 	margin-bottom: 5rem;
 
 
@@ -30,11 +29,12 @@ defineProps<{
 
 	.image {
 		width: 100%;
-		height: 20rem;
+		height: 18rem;
 		position: relative;
 		background: $dark-grey;
 		margin-bottom: 4rem;
 		.info {
+			width: max-content;
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -66,10 +66,12 @@ defineProps<{
 	}
 }
 
-@media (max-width: 45rem) {
+@media (max-width: $width) {
 	.member_card{
 		margin-bottom: 2rem;
-		.image .info{
+		.image{
+			height: 15rem;
+			.info{
 			h2{
 				font-size: 1rem;
 			}
@@ -77,9 +79,18 @@ defineProps<{
 				font-size: 0.75rem;
 			}
 		}
+		}
+		
 		p{
 			font-size: 0.9rem;
 		}
+	}
+}
+
+@media (max-width: 45rem) {
+	.member_card{
+		width: 100%;
+		max-width: 15rem;
 	}
 }
 </style>

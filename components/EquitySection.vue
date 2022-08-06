@@ -30,6 +30,7 @@ import { equity } from "~/data"
 
 			img{
 				width: 15rem;
+				height: 9rem;
 			}
 		}
 	}
@@ -38,6 +39,7 @@ import { equity } from "~/data"
 @media (max-width: 60rem) {
 	.equity_section .wrap .grid img{
 		width: 10rem;
+		height: 5.5rem;
 	}
 }
 
@@ -48,6 +50,7 @@ import { equity } from "~/data"
 			flex-wrap: wrap;
 			img{
 				width: 40%;
+				height: initial;
 			}
 		}
 	}
