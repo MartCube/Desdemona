@@ -35,17 +35,11 @@ import { estate } from "~/data"
 		justify-content: space-between;
 
 		.image {
-			width: 20rem;
-			height: 20rem;
+			width: 30%;
+			height: 18rem;
 			position: relative;
 			background: $dark-grey;
-			background-image: linear-gradient(
-				0deg,
-				hsl(203deg 64% 38%) 0%,
-				hsl(207deg 32% 41%) 39%,
-				hsl(210deg 15% 42%) 61%,
-				hsl(0deg 0% 41%) 100%
-			);
+			background-image: linear-gradient(0deg,hsl(203deg 64% 38%) 0%,hsl(207deg 32% 41%) 39%,hsl(210deg 15% 42%) 61%,hsl(0deg 0% 41%) 100%);
 
 			display: flex;
 			flex-direction: column;

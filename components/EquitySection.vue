@@ -23,25 +23,25 @@ import { equity } from "~/data"
 	.wrap{
 		.grid{
 			width: 100%;
-			max-width: 70rem;
+			max-width:$width;
 
 			display: flex;
 			justify-content: space-between;
 
 			img{
-				width: 15rem;
-				height: 9rem;
+				width: 20%;
+				height: 6.75rem;
 			}
 		}
 	}
 }
 
-@media (max-width: 60rem) {
-	.equity_section .wrap .grid img{
-		width: 10rem;
-		height: 5.5rem;
-	}
-}
+// @media (max-width: $width) {
+// 	.equity_section .wrap .grid img{
+// 		width: 10rem;
+// 		height: 5.5rem;
+// 	}
+// }
 
 @media (max-width: 45rem) {
 .equity_section{

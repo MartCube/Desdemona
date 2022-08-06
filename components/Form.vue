@@ -1,6 +1,5 @@
 <template>
 	<form @submit="onSubmit" autocomplete="off">
-
 		<div class="input_wrap">
 			<input name="name" placeholder="Name" v-model="values.name" />
 			<span class="error" v-show="submitCount > 0">{{ errors.name }}</span>
@@ -9,19 +8,17 @@
 			<input name="email" placeholder="Email" v-model="values.email" />
 			<span class="error" v-show="submitCount > 0">{{ errors.email }}</span>
 		</div>
-		<div class="input_wrap">		
+		<div class="input_wrap">
 			<input name="phone" placeholder="Phone" v-model="values.phone" />
 			<span class="error" v-show="submitCount > 0">{{ errors.phone }}</span>
 		</div>
-
 		<div class="textarea_wrap">
-			<textarea name="message" placeholder="Message" rows="10" />
+			<textarea name="message" placeholder="Message" rows="10" v-model="values.message"/>
 			<span class="error" v-show="submitCount > 0">{{ errors.message }}</span>
 		</div>
 		<button type="submit">
 			send message <Icon name="arrow"/>
 		</button>
-
 	</form>
 </template>
 
@@ -36,7 +33,7 @@ const validationSchema = toFormValidator(
 		name: z.string().min(1),
 		email: z.string().min(1).email(),
 		phone: z.string().min(1),
-		message: z.string().min(1).max(320),
+		message: z.string().min(1),
 	})
 );
 
@@ -57,20 +54,17 @@ const onSubmit =handleSubmit(async(values, actions,) => {
 <style lang="scss" scoped>
 form {
 	width: 100%;
-	max-width: 80rem;
+	max-width: calc($width + 10rem);
 	padding: 5rem;
-
-	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 	background: white;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-
 	position: relative;
-
 	.input_wrap{
-		width: 100%;
+		width: 30%;
 		max-width: 20rem;
 		position: relative;
 		input {
@@ -102,7 +96,7 @@ form {
 		position: relative;
 		textarea { 
 			width: 100%;
-			padding: 1rem;
+			padding: 1.5rem;
 
 			resize: none;
 			border: none;
@@ -127,7 +121,7 @@ form {
 		position: absolute;
 		bottom: 5rem;
 		right: 5rem;
-		width: 20rem;
+		width: calc(30% - 5vw);
 		height: 4rem;
 
 		display: flex;
@@ -141,7 +135,6 @@ form {
 		font-weight: 600;
 		text-transform: uppercase;	
 		cursor: pointer;
-
 		.icon{
 			fill:$white;
 			margin-left: 1rem;
@@ -154,16 +147,13 @@ form {
 @media (max-width: 70rem) {
 	form{
 		padding: 5%;
-		.input_wrap{
-			width: 30%;
-		}
 		button{
 			bottom: 5vw;
 			right: 5vw;
 		}
 	}
 }
-@media (max-width: 50rem) {
+@media (max-width: 55rem) {
 	form{
 		.input_wrap{
 			width: 100%;
@@ -171,7 +161,17 @@ form {
 			input{
 				margin-bottom: 5%;
 				height: 3rem;
-			}			
+			}
+			.error{
+				top: -0.8rem;
+				right: 0.2rem;
+			}
+		}
+		.textarea_wrap{
+			.error{
+				top: -0.8rem;
+				right: 0.2rem;
+			}
 		}
 		button{
 			width: 50%;
