@@ -32,7 +32,7 @@ body {
 .estate_section,
 .press_section {
 	width: 100%;
-	padding: 10rem 0;
+	padding: 5rem 0;
 
 	display: flex;
 	justify-content: center;
@@ -131,4 +131,14 @@ body {
 			}
 		}
 	}
+}
+
+.page-enter-active,
+.page-leave-active {
+	transition: opacity .2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.page-enter,
+.page-leave-active {
+	opacity: 0
 }
