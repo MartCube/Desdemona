@@ -8,6 +8,7 @@
 					:src="data.video" 
 					title="YouTube video player" 
 					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					/>
 			</div>
 			<div v-if="data.poster" class="poster">
@@ -66,7 +67,7 @@ defineProps<{
 		}
 		h2{
 			font-size: 2rem;
-			line-height: 2rem;
+			line-height: 3rem;
 			margin-bottom: 2rem;
 			&::first-letter{
 				text-transform: capitalize;
@@ -91,7 +92,7 @@ defineProps<{
 		.info{
 			h2{
 				font-size: 1.5rem;
-				
+				line-height: 2rem;
 			}
 			p{
 				font-size: 0.9rem;

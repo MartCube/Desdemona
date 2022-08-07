@@ -93,15 +93,21 @@ export const estate: Array<estate_T> = [
 
 export const press: Array<press_T> = [
 	{
-		// video: 'https://www.youtube.com/embed/Fq0fSZ3QDe0',
+		video: 'https://www.youtube.com/embed/AvYDYcrbHj0',
 		author: 'derek l. coronado',
-		title: 'lorem ipsum dolor sit amet',
+		title: 'TLC Four Houses',
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iste sunt itaque nam porro, amet quidem assumenda tempore provident.',
 	},
 	{
 		video: 'https://www.youtube.com/embed/Fq0fSZ3QDe0',
 		author: 'jeremy D. anderson',
-		title: 'Eveniet odit fugiat voluptas',
+		title: 'Luxus und Laessigkeit in St. Tropez',
+		description: 'Lorem ipsum dolor sit amet consectetur sit amet adipisicing elit. Eveniet odit fugiat voluptas adipisicing elit. Eveniet odit fugiat voluptas',
+	},
+	{
+		video: 'https://www.youtube.com/embed/WJClHSWEj1I',
+		author: 'jeremy D. anderson',
+		title: 'Miami Mondaen',
 		description: 'Lorem ipsum dolor sit amet consectetur sit amet adipisicing elit. Eveniet odit fugiat voluptas adipisicing elit. Eveniet odit fugiat voluptas',
 	}
 ]
