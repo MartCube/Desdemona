@@ -4,10 +4,10 @@
 			<h3 class="subtitle">select properties</h3>
 			<h2 class="title">real estate</h2>
 			<div class="grid">
-				<NuxtLink v-for="data in estate" class="image" to="/">
-					<img v-if="data.poster" :src="data.poster" >
-					<h2>{{data.title}}</h2>
-					<h3>{{data.subtitle}}</h3>
+				<NuxtLink v-for="item in data" class="image" to="/">
+					<img v-if="item.poster" :src="item.poster" >
+					<h2>{{item.title}}</h2>
+					<h3>{{item.subtitle}}</h3>
 				</NuxtLink>
 			</div>	
 			<NuxtLink class="link" to='/real-estate'>
@@ -19,6 +19,9 @@
 
 <script setup lang="ts">
 import { estate } from "~/data"
+
+const data = estate.slice(0, 3);
+
 
 
 </script>
@@ -54,6 +57,7 @@ import { estate } from "~/data"
 				text-transform: capitalize;
 				font-weight: 600;
 				margin-bottom: 0.5rem;
+				text-align: center;
 			}
 			h3 {
 				text-align: center;

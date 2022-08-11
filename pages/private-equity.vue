@@ -4,7 +4,6 @@
 		<div class="grid">
 			<EquityCard v-for="item in equity" :data="item" />
 		</div>
-
 	</div>
 </template>
 

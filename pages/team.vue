@@ -20,7 +20,8 @@ useHead({
 	max-width: $width;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
 
 }
 @media (max-width: $width) {
