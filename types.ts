@@ -3,14 +3,6 @@ export interface link_T {
 	url: string,
 }
 
-export interface press_T {
-	video?: string,
-	poster?: string,
-	author: string,
-	title: string,
-	description: string,
-}
-
 export interface equity_T {
 	title: string,
 	link: string,
@@ -37,4 +29,12 @@ export interface ContactForm {
 	email: string;
 	phone: number;
 	message: string;
+}
+
+export interface press_T {
+	video?: string,
+	poster?: string,
+	author?: string,
+	title: string,
+	description?: string,
 }

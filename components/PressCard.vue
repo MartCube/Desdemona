@@ -16,9 +16,9 @@
 			</div>
 		</div>
 		<div class="info">
-			<p class="author">{{data.author}}</p>
+			<p v-if="data.author" class="author">{{data.author}}</p>
 			<h2>{{data.title}}</h2>
-			<p>{{data.description}}</p>
+			<p v-if="data.description">{{data.description}}</p>
 		</div>
 	</div>
 </template>
@@ -68,7 +68,7 @@ defineProps<{
 		h2{
 			font-size: 2rem;
 			line-height: 3rem;
-			margin-bottom: 2rem;
+			// margin-bottom: 2rem;
 			&::first-letter{
 				text-transform: capitalize;
 			}
