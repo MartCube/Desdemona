@@ -1,7 +1,7 @@
 <template>
 	<div class="member_card">
 		<div class="image">
-			<img v-if="data.poster" :src="data.poster" >
+			<img v-if="data.image" v-lazy="data.image" >
 			<div class="info">
 				<h2>{{data.name}}</h2>
 				<span>{{data.position}}</span>
@@ -19,20 +19,34 @@ defineProps<{
 </script>
 
 <style lang="scss" scoped>
-.member_card{
+.member_card {
 	width: 30%;
 	margin-bottom: 5rem;
-
 
 	display: flex;
 	flex-direction: column;
 
 	.image {
 		width: 100%;
-		height: 18rem;
+		height: 22rem;
 		position: relative;
 		background: $dark-grey;
 		margin-bottom: 4rem;
+
+		img{
+			width: inherit;
+			height: inherit;
+			object-fit: cover;
+			object-position: top;
+			&[lazy = loading] {
+				opacity: 0;
+			}
+			&[lazy = loaded] {
+				opacity: 1;
+				transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+			}
+		}
+		
 		.info {
 			width: max-content;
 			position: absolute;

@@ -4,11 +4,7 @@
 			<h3 class="subtitle">select properties</h3>
 			<h2 class="title">real estate</h2>
 			<div class="grid">
-				<NuxtLink v-for="item in data" class="image" to="/">
-					<img v-if="item.poster" :src="item.poster" >
-					<h2>{{item.title}}</h2>
-					<h3>{{item.subtitle}}</h3>
-				</NuxtLink>
+				<EstateCard v-for="item in data" :data="item" />
 			</div>	
 			<NuxtLink class="link" to='/real-estate'>
 				learn more <Icon name="arrow" />
@@ -21,9 +17,6 @@
 import { estate } from "~/data"
 
 const data = estate.slice(0, 3);
-
-
-
 </script>
 
 <style lang="scss" scoped>
@@ -32,83 +25,34 @@ const data = estate.slice(0, 3);
 	.wrap .grid{
 		width: 100%;
 		max-width: 70rem;
-		// margin: 5rem 0;
 
 		display: flex;
 		justify-content: space-between;
-
-		.image {
-			width: 30%;
-			height: 18rem;
-			position: relative;
-			background: $dark-grey;
-			background-image: linear-gradient(0deg,hsl(203deg 64% 38%) 0%,hsl(207deg 32% 41%) 39%,hsl(210deg 15% 42%) 61%,hsl(0deg 0% 41%) 100%);
-
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-end;
-			align-items: center;
-
-			color:$white;
-			text-decoration: none;
-
-			h2 {
-				font-size: 1.5rem;
-				text-transform: capitalize;
-				font-weight: 600;
-				margin-bottom: 0.5rem;
-				text-align: center;
-			}
-			h3 {
-				text-align: center;
-				font-weight: 400;
-				margin-bottom: 1rem;
+		
+		.estate_card{
+			margin:0;
+			.image{
+				margin:0;
 			}
 		}
 	}
 }
 
-@media (max-width: 60rem) {
-	.estate_section .wrap .grid .image{
-		width: 15rem;
-		height: 15rem;
-
-		
-	}
-}
-
-@media (max-width: 50rem) {
-	.estate_section .wrap .grid{
-		justify-content: flex-start	;
-
-		.image{
-			width: 50vw;
-			max-width: 12rem;
-			height: 12rem;
-			h2{
-				font-size: 1.2rem;
-			}
-			h3{
-				font-size: 0.8rem;
-			}
-
-			&:first-of-type{
-				margin-right: 5%;
-			}
-			&:last-of-type{
+@media (max-width: 45rem) {
+	.estate_section .wrap .grid  {
+		.estate_card{
+			&:nth-child(3){
 				display: none;
 			}
 		}
 	}
 }
 
-@media (max-width: 24rem) {
-	.estate_section .wrap .grid{
-		justify-content: flex-start	;
-
-		.image{
-			width: 10rem;
-			height: 10rem;
+@media (max-width: 32rem) {
+	.estate_section .wrap .grid  {
+		.estate_card{
+			width:45%;
+			height: 12rem;
 		}
 	}
 }

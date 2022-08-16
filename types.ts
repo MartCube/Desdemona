@@ -11,16 +11,16 @@ export interface equity_T {
 }
 
 export interface estate_T {
+	poster?: string,
 	title: string,
 	subtitle: string,
-	poster?: string,
 	description: string,
 }
 
 export interface member_T {
+	image?: string,
 	name: string,
 	position: string,
-	poster?: string,
 	description: string,
 }
 

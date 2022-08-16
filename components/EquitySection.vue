@@ -27,10 +27,20 @@ import { equity } from "~/data"
 
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
 
 			img{
-				width: 20%;
-				height: 6.75rem;
+				width: 12rem;
+				height: 100%;
+				max-height: 10rem;
+				object-fit: contain;
+				&[lazy = loading] {
+					opacity: 0;
+				}
+				&[lazy = loaded] {
+					opacity: 1;
+					transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+				}
 			}
 		}
 	}

@@ -37,8 +37,17 @@ defineProps<{
 		display: flex;
 		justify-content: center;
 		img{
-			width: 15rem;
-			height: 9rem;
+			width: 12rem;
+			height: 100%;
+			max-height: 10rem;
+			object-fit: contain;
+			&[lazy = loading] {
+				opacity: 0;
+			}
+			&[lazy = loaded] {
+				opacity: 1;
+				transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+			}
 		}
 		
 		a {
@@ -94,6 +103,7 @@ defineProps<{
 		}
 	}
 }
+
 @media (max-width: 45rem) {
 	.equity_card{
 		flex-direction: column;
