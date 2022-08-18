@@ -2,7 +2,7 @@
 	<div class="equity_card">
 		<div class="image">
 			<img v-if="data.poster" v-lazy="data.poster" >
-			<NuxtLink to="/">
+			<NuxtLink :to="data.link" target="_blank">
 				learn more <Icon name="arrow"/>
 			</NuxtLink>
 		</div>

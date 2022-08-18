@@ -10,7 +10,6 @@
 import { defineComponent } from "vue";
 import { GoogleMap } from "vue3-google-map";
 
-
 export default defineComponent({
   	components: { GoogleMap },
 });

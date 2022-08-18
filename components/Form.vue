@@ -1,5 +1,5 @@
 <template>
-	<form @submit="onSubmit" autocomplete="off">
+	<form @submit="onSubmit" autocomplete="off" name="contact" method="POST" data-netlify="true"> 
 		<div class="input_wrap">
 			<input name="name" placeholder="Name" v-model="values.name" />
 			<span class="error" v-show="submitCount > 0">{{ errors.name }}</span>
@@ -42,13 +42,9 @@ const { values, errors, handleSubmit, submitCount } = useForm<ContactForm>({
 })
 
 const onSubmit =handleSubmit(async(values, actions,) => {
-
 	console.log('...sending values to API');
 	// reset form with actions.resetForm();
 });
-
-
-
 </script>
 
 <style lang="scss" scoped>

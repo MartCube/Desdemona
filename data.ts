@@ -31,19 +31,19 @@ export const equity: Array<equity_T> = [
 	{
 		poster: '/equity/villazzo.png',
 		title: 'Villazzo',
-		link: '/',
+		link: 'https://www.villazzo.com/',
 		description: 'In 2004, Villazzo introduced a new concept into the hospitality market called a  VillaHotel. VillaHotels combine the accessories and services of a five-star hotel with spectacular, hand-picked luxury homes, giving you a level of personalized service, attention to detail, and privacy that cannot be found elsewhere. Villazzo offers VillaHotels in in St. Tropez, Miami, Paris and beyond.',
 	},
 	{
 		poster: '/equity/omp.png',
 		title: 'One Model Place',
-		link: '/',
+		link: 'https://www.onemodelplace.com/',
 		description: 'One Model Place is an online community for models, photographers, and creative talents with almost 200,000 active members. One Model Place started in 1997 and has grown to a thriving company with over 20 employees working on designing, programming, and overseeing the day-to-day activities on the site. OMP is a privately-owned corporation.',
 	},
 	{
 		poster: '/equity/nikkibeach.png',
 		title: 'Nikki Beach',
-		link: '/',
+		link: 'https://nikkibeach.com/',
 		description: "Desdemona Capital is one of the founding partners of Nikki Beach Saint-Tropez.Nikki Beach Saint-Tropez is world renowned for its surreal beauty and ambiance. It is one of the few places on the planet where one can simultaneously enjoy champagne & cocktails at noon, accompanied by contemporary European delights & mood enhancing tunes.",
 	},
 ]
