@@ -1,5 +1,5 @@
 <template>
-	<form @submit="onSubmit" autocomplete="off" name="contact" method="POST" data-netlify="true"> 
+	<form @submit="onSubmit" autocomplete="off" name="contact" method="POST" netlify data-netlify="true"> 
 		<div class="input_wrap">
 			<input name="name" placeholder="Name" v-model="values.name" />
 			<span class="error" v-show="submitCount > 0">{{ errors.name }}</span>
