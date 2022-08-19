@@ -163,6 +163,7 @@ form {
 		align-items: center;
 
 		h2{
+			color: $primary;
 			text-transform: capitalize;
 			font-size: 1.2rem;
 			font-weight: 300;
