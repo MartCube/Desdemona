@@ -1,5 +1,5 @@
 <template>
-	<form @submit="onSubmit" autocomplete="off" name="contact" method="POST" netlify data-netlify="true"> 
+	<form ref="form" @submit="onSubmit" autocomplete="off"> 
 		<div class="input_wrap">
 			<input name="name" placeholder="Name" v-model="values.name" />
 			<span class="error" v-show="submitCount > 0">{{ errors.name }}</span>
@@ -16,9 +16,14 @@
 			<textarea name="message" placeholder="Message" rows="10" v-model="values.message"/>
 			<span class="error" v-show="submitCount > 0">{{ errors.message }}</span>
 		</div>
-		<button type="submit">
+		<button class="submit" type="submit">
 			send message <Icon name="arrow"/>
 		</button>
+		<div v-if="msg" class="msg">
+			<h2>Thank you</h2>
+			<p>We've received your message and will contact you soon.</p>
+			<button @click="msg = false">Write New Message</button>
+		</div>
 	</form>
 </template>
 
@@ -27,7 +32,10 @@ import { useForm } from 'vee-validate';
 import type { ContactForm } from "~/types";
 import { toFormValidator } from '@vee-validate/zod';
 import { z } from 'zod';
+import emailjs from '@emailjs/browser';
 
+const form = ref()
+const msg = ref(true)
 const validationSchema = toFormValidator(
 	z.object({
 		name: z.string().min(1),
@@ -36,14 +44,17 @@ const validationSchema = toFormValidator(
 		message: z.string().min(1),
 	})
 );
-
 const { values, errors, handleSubmit, submitCount } = useForm<ContactForm>({
 	validationSchema,
 })
 
-const onSubmit =handleSubmit(async(values, actions,) => {
-	console.log('...sending values to API');
-	// reset form with actions.resetForm();
+const onSubmit = handleSubmit(async(values, actions) => {
+	
+	emailjs.sendForm('service_f8wwkf9', 'template_36b5j8o', form.value, 'YVzaQIyzcpywjD7jW').then((result) => { console.log('SUCCESS!', result.text) },(error) => { console.log('FAILED...', error.text) },)
+	
+	// show msg
+	msg.value = true
+	actions.resetForm()
 });
 </script>
 
@@ -113,7 +124,7 @@ form {
 			font-size: 0.7rem;
 		}
 	}
-	button{
+	.submit{
 		position: absolute;
 		bottom: 5rem;
 		right: 5rem;
@@ -138,12 +149,64 @@ form {
 			height: 1rem;
 		}
 	}
+	.msg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $white;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		h2{
+			text-transform: capitalize;
+			font-size: 1.2rem;
+			font-weight: 300;
+
+			display: flex;
+			align-items: center;
+			&:before{
+				content: '';
+				width: 2.5rem;
+				height: 2px;
+				margin-right: 1rem;
+				background: $primary;
+			}
+			&:after{
+				content: '';
+				width: 2.5rem;
+				height: 2px;
+				margin-left: 1rem;
+				background: $primary;
+			}
+		}
+		p{
+			margin: 1rem;
+			text-align: center;
+		}
+		button{
+			border: none;
+			background: $primary;
+			padding: 0.8rem 1.8rem;
+		
+			color: $white;
+			font-size: 1rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
 }
 
 @media (max-width: 70rem) {
 	form{
 		padding: 5%;
-		button{
+		.submit{
 			bottom: 5vw;
 			right: 5vw;
 		}
@@ -169,7 +232,7 @@ form {
 				right: 0.2rem;
 			}
 		}
-		button{
+		.submit{
 			width: 50%;
 			height: 3rem;
 		}
