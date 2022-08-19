@@ -35,7 +35,7 @@ import { z } from 'zod';
 import emailjs from '@emailjs/browser';
 
 const form = ref()
-const msg = ref(true)
+const msg = ref(false)
 const validationSchema = toFormValidator(
 	z.object({
 		name: z.string().min(1),
