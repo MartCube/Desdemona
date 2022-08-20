@@ -3,7 +3,7 @@
 		<Slider />
 		<EquitySection />
 		<EstateSection />
-		<PressSection />
+		<!-- <PressSection /> -->
 	</div>
 </template>
 
