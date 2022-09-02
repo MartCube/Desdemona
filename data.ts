@@ -29,22 +29,28 @@ export const links: Array<link_T> = [
 
 export const equity: Array<equity_T> = [
 	{
-		poster: '/equity/villazzo.png',
-		title: 'Villazzo',
-		link: 'https://www.villazzo.com/',
-		description: 'In 2004, Villazzo introduced a new concept into the hospitality market called a  VillaHotel. VillaHotels combine the accessories and services of a five-star hotel with spectacular, hand-picked luxury homes, giving you a level of personalized service, attention to detail, and privacy that cannot be found elsewhere. Villazzo offers VillaHotels in in St. Tropez, Miami, Paris and beyond.',
+		poster: '/equity/hookah.png',
+		title: 'hookah',
+		link: '/',
+		description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga placeat dolorem nisi quae aliquid est porro consequuntur enim quis saepe.',
 	},
 	{
 		poster: '/equity/omp.png',
-		title: 'One Model Place',
-		link: 'https://www.onemodelplace.com/',
-		description: 'One Model Place is an online community for models, photographers, and creative talents with almost 200,000 active members. One Model Place started in 1997 and has grown to a thriving company with over 20 employees working on designing, programming, and overseeing the day-to-day activities on the site. OMP is a privately-owned corporation.',
+		title: 'omp',
+		link: '/',
+		description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, illum necessitatibus? Tempora eligendi illo praesentium aliquam delectus, recusandae dolore perferendis, fuga autem beatae consequuntur a exercitationem libero numquam architecto vitae!',
 	},
 	{
-		poster: '/equity/nikkibeach.png',
-		title: 'Nikki Beach',
-		link: 'https://nikkibeach.com/',
-		description: "Desdemona Capital is one of the founding partners of Nikki Beach Saint-Tropez.Nikki Beach Saint-Tropez is world renowned for its surreal beauty and ambiance. It is one of the few places on the planet where one can simultaneously enjoy champagne & cocktails at noon, accompanied by contemporary European delights & mood enhancing tunes.",
+		poster: '/equity/the007.png',
+		title: 'the 007',
+		link: '/',
+		description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nam consequatur, laborum fugiat voluptas adipisci veniam deserunt? Numquam, dicta error? A, laudantium minus recusandae itaque possimus harum qui numquam illo debitis cupiditate eos inventore nostrum impedit molestias facilis asperiores magnam?',
+	},
+	{
+		poster: '/equity/top7.png',
+		title: 'top 7',
+		link: '/',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores alias tenetur, vitae dignissimos, provident id sed cumque recusandae nesciunt magni a laborum inventore eligendi saepe repellat. Blanditiis eligendi laboriosam optio possimus ea quisquam non, dolores, fugit eius harum deleniti repudiandae.',
 	},
 ]
 
