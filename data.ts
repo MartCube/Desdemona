@@ -29,10 +29,10 @@ export const links: Array<link_T> = [
 
 export const equity: Array<equity_T> = [
 	{
-		poster: '/equity/hookah.png',
-		title: 'hookah',
+		poster: '/equity/the007.png',
+		title: 'the 007',
 		link: '/',
-		description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga placeat dolorem nisi quae aliquid est porro consequuntur enim quis saepe.',
+		description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nam consequatur, laborum fugiat voluptas adipisci veniam deserunt? Numquam, dicta error? A, laudantium minus recusandae itaque possimus harum qui numquam illo debitis cupiditate eos inventore nostrum impedit molestias facilis asperiores magnam?',
 	},
 	{
 		poster: '/equity/omp.png',
@@ -41,16 +41,16 @@ export const equity: Array<equity_T> = [
 		description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, illum necessitatibus? Tempora eligendi illo praesentium aliquam delectus, recusandae dolore perferendis, fuga autem beatae consequuntur a exercitationem libero numquam architecto vitae!',
 	},
 	{
-		poster: '/equity/the007.png',
-		title: 'the 007',
-		link: '/',
-		description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nam consequatur, laborum fugiat voluptas adipisci veniam deserunt? Numquam, dicta error? A, laudantium minus recusandae itaque possimus harum qui numquam illo debitis cupiditate eos inventore nostrum impedit molestias facilis asperiores magnam?',
-	},
-	{
 		poster: '/equity/top7.png',
 		title: 'top 7',
 		link: '/',
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores alias tenetur, vitae dignissimos, provident id sed cumque recusandae nesciunt magni a laborum inventore eligendi saepe repellat. Blanditiis eligendi laboriosam optio possimus ea quisquam non, dolores, fugit eius harum deleniti repudiandae.',
+	},
+	{
+		poster: '/equity/hookah.png',
+		title: 'hookah',
+		link: '/',
+		description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga placeat dolorem nisi quae aliquid est porro consequuntur enim quis saepe.',
 	},
 ]
 
