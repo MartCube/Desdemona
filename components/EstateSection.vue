@@ -5,10 +5,8 @@
 			<h2 class="title">real estate</h2>
 			<div class="grid">
 				<EstateCard v-for="item in data" :data="item" />
-			</div>	
-			<NuxtLink class="link" to='/real-estate'>
-				learn more <Icon name="arrow" />
-			</NuxtLink>
+			</div>
+			<NuxtLink class="link" to='/real-estate'>learn more</NuxtLink>
 		</div>
 	</section>
 </template>
@@ -22,26 +20,28 @@ const data = estate.slice(0, 3);
 <style lang="scss" scoped>
 .estate_section {
 	background: #eeeff2;
-	.wrap .grid{
+
+	.wrap .grid {
 		width: 100%;
 		max-width: 70rem;
 
 		display: flex;
 		justify-content: space-between;
-		
-		.estate_card{
-			margin:0;
-			.image{
-				margin:0;
+
+		.estate_card {
+			margin: 0;
+
+			.image {
+				margin: 0;
 			}
 		}
 	}
 }
 
 @media (max-width: 45rem) {
-	.estate_section .wrap .grid  {
-		.estate_card{
-			&:nth-child(3){
+	.estate_section .wrap .grid {
+		.estate_card {
+			&:nth-child(3) {
 				display: none;
 			}
 		}
@@ -49,9 +49,9 @@ const data = estate.slice(0, 3);
 }
 
 @media (max-width: 32rem) {
-	.estate_section .wrap .grid  {
-		.estate_card{
-			width:45%;
+	.estate_section .wrap .grid {
+		.estate_card {
+			width: 45%;
 			height: 12rem;
 		}
 	}

@@ -3,9 +3,7 @@
 		<div class="wrap">
 			<h3 class="subtitle">milestones</h3>
 			<h2 class="title">press</h2>
-			<NuxtLink class="link" to='/private-equity'>
-				learn more <Icon name="arrow" />
-			</NuxtLink>
+			<NuxtLink class="link" to='/private-equity'>learn more</NuxtLink>
 		</div>
 	</section>
 </template>

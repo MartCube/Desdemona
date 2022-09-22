@@ -4,11 +4,9 @@
 			<h3 class="subtitle">highlights</h3>
 			<h2 class="title">private equity</h2>
 			<div class="grid">
-				<img v-for="item in equity" :key="item.poster" v-lazy="item.poster" >
+				<img v-for="item in equity" :key="item.poster" v-lazy="item.poster">
 			</div>
-			<NuxtLink class="link" to='/private-equity'>
-				learn more <Icon name="arrow" />
-			</NuxtLink>
+			<NuxtLink class="link" to='/private-equity'>learn more</NuxtLink>
 		</div>
 	</section>
 </template>
@@ -19,25 +17,27 @@ import { equity } from "~/data"
 </script>
 
 <style lang="scss" scoped>
-.equity_section{
-	.wrap{
-		.grid{
+.equity_section {
+	.wrap {
+		.grid {
 			width: 100%;
-			max-width:$width;
+			max-width: $width;
 
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 
-			img{
+			img {
 				width: 12rem;
 				height: 100%;
 				max-height: 10rem;
 				object-fit: contain;
-				&[lazy = loading] {
+
+				&[lazy=loading] {
 					opacity: 0;
 				}
-				&[lazy = loaded] {
+
+				&[lazy=loaded] {
 					opacity: 1;
 					transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
 				}
@@ -54,16 +54,17 @@ import { equity } from "~/data"
 // }
 
 @media (max-width: 45rem) {
-.equity_section{
-	.wrap{
-		.grid{
-			flex-wrap: wrap;
-			img{
-				width: 40%;
-				height: initial;
+	.equity_section {
+		.wrap {
+			.grid {
+				flex-wrap: wrap;
+
+				img {
+					width: 40%;
+					height: initial;
+				}
 			}
 		}
 	}
-}
 }
 </style>
