@@ -77,37 +77,22 @@ export const team: Array<member_T> = [
 
 export const estate: Array<estate_T> = [
 	{
-		title: 'Villazzo',
-		subtitle: 'Investments',
-		description: 'Villazzo Investments is a partnership of elite investors that have taken advantage of the safe asset class of exclusive luxury residential real estate – the most lucrative way of investing money that Christian has attained over 15 years as an investor himself.',
-	},
-	{
-		poster: '/estate/contenta.webp',
-		title: '10 Palm Avenue',
-		subtitle: 'Palm Island',
-		description: "10 Palm Avenue can only be described as spectacular from just about every standpoint. The huge 11,000 sq ft (1,022 m²) villa, built in the Spanish Colonial style on exclusive Palm Island, has views across Biscayne Bay towards South Beach. A private dock, floating deck, dining terrace with bar, fridge and barbecue, an enormous 130 ft heated, walk-in pool with Jacuzzi, swim -in grotto and waterfall, are just some of the garden's features.",
-	},
-	{
-		poster: '/estate/murano.webp',
-		title: 'Murano Grande',
-		subtitle: 'South Beach',
-		description: 'The Murano Grande at Portofino is an exceptional condo tower in the prestigious South of Fifth neighborhood of South Beach. Desdemona owns a combined, completely renovated front-to-back 5-bedroom unit of approx. 4000 sqft. Its close proximity to both prime beaches and world-class shopping and nightlife make it very easy to call home.',
-	},
-	{
-		title: '81 Washington Avenue',
-		subtitle: 'South Beach',
-		description: 'One of the few original Art Deco buildings left in the prestigious South of Fifth neighborhood, 81 Washington combines over 14,000 square feet of interior space with a big outdoor garden. It houses a gourmet restaurant and offices.',
-	},
-	{
 		poster: '/estate/katafanga.webp',
-		title: 'Katafanga Island',
-		subtitle: 'South Beach',
-		description: 'Katafanga Island is a 225 acre white sand beach island in Fiji that is probably the closest thing to paradise that exists on this planet. It is strategically encircled by a natural 5,000 acre bioiluminescent turquoise blue lagoon and breathtaking sugar white beaches. It is one of the most developed islands in Fiji and the region and includes a runway, a ring road, a water reservoir, jetties and employee housing. 20 villas are currently under construction.',
+		title: 'katafanga',
+		subtitle: 'private island',
+		description: 'description',
 	},
 	{
-		title: 'Katafanga Island',
-		subtitle: 'South Beach',
-		description: 'Katafanga Island is a 225 acre white sand beach island in Fiji that is probably the closest thing to paradise that exists on this planet. It is strategically encircled by a natural 5,000 acre bioiluminescent turquoise blue lagoon and breathtaking sugar white beaches. It is one of the most developed islands in Fiji and the region and includes a runway, a ring road, a water reservoir, jetties and employee housing. 20 villas are currently under construction.',
+		poster: '/estate/continuum.webp',
+		title: 'continuum',
+		subtitle: 'south beach',
+		description: 'description',
+	},
+	{
+		poster: '/estate/fivepark.webp',
+		title: 'Five Park',
+		subtitle: 'miami beach',
+		description: "The newest luxury residential tower is coming to Miami Beach. With spectacular bay and ocean 360-degree views, this stunning creation from the world’s most visionary design minds features residences with vast balconies, lofty ceilings, and state-of-the-art appliances. The building has exceptional amenities across 50,000 square feet, including an onsite spa and wellness center. Additionally, residents have access to a private beach club and a three-acre park right outside the front door.",
 	},
 ]
 
