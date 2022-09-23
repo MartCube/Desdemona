@@ -1,6 +1,17 @@
 <template>
 	<div class="page">
-		<Slider />
+		<!-- <Slider /> -->
+		<div class="intro">
+			<div class="text">
+				<p>" do not hire a man</p>
+				<p>who does your</p>
+				<p>work for money,</p>
+				<p>but him who does it</p>
+				<p>for love of it "</p>
+			</div>
+
+			<img src="/intro.webp" />
+		</div>
 		<EquitySection />
 		<EstateSection />
 		<!-- <PressSection /> -->
@@ -12,12 +23,85 @@
 </script>
 
 <style lang="scss" scoped>
-
-.page{
+.page {
 	width: 100%;
 	min-height: 100vh;
 
 	display: flex;
 	flex-direction: column;
+
+	.intro {
+		width: 100vw;
+		height: 100vh;
+
+		position: relative;
+
+		.text {
+			position: absolute;
+			top: 50%;
+			left: 35%;
+			transform: translate(-50%, -50%);
+
+			p {
+				color: white;
+				font-size: 2.5rem;
+				font-weight: 700;
+				text-transform: uppercase;
+
+				margin-left: 2rem;
+
+				&:first-of-type {
+					margin: 0;
+				}
+			}
+
+		}
+
+		img {
+			width: 100vw;
+			height: 100%;
+			object-fit: cover;
+			object-position: top;
+		}
+	}
+}
+
+@media (max-width: 60rem) {
+	.page .intro {
+		width: 100vw;
+		height: 60vh;
+
+		.text p {
+			font-size: 1.5rem;
+			line-height: 1.2rem;
+			margin-left: 1rem;
+		}
+
+		img {
+			width: 100vw;
+			height: 100%;
+			object-fit: cover;
+			object-position: top;
+		}
+	}
+}
+
+@media (max-width: 45rem) {
+	.page .intro {
+		width: 100vw;
+		height: 100%;
+
+		.text p {
+			font-size: 1rem;
+			margin-left: 0.5rem;
+		}
+
+		img {
+			width: 100vw;
+			height: 100%;
+			object-fit: contain;
+			object-position: top;
+		}
+	}
 }
 </style>

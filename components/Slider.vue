@@ -1,17 +1,17 @@
 <template>
-  <div>
-	<Carousel :settings="settings">
-    <Slide v-for="src in images" :key="src">
-      	<div class="slide">
-			<img v-lazy="src"  />
-		</div>
-    </Slide>
+	<div>
+		<Carousel :settings="settings">
+			<Slide v-for="src in images" :key="src">
+				<div class="slide">
+					<img v-lazy="src" />
+				</div>
+			</Slide>
 
-    <template #addons>
-		<Navigation/>
-    </template>
-  </Carousel>
-  </div>
+			<template #addons>
+				<Navigation />
+			</template>
+		</Carousel>
+	</div>
 </template>
 
 <script>
@@ -28,42 +28,41 @@ export default defineComponent({
 		Navigation,
 	},
 	data: () => ({
-    	// carousel settings
+		// carousel settings
 		settings: {
 			itemsToShow: 1,
 			wrapAround: true
 		},
-		images:[ '/slider/red.webp',  '/slider/orange.webp','/slider/yellow.webp', ]
+		images: ['/intro.webp']
 	})
 });
 </script>
 
 <style lang="scss" >
-
 .carousel {
 	width: 100vw;
-	
+
 	.carousel__prev,
 	.carousel__next {
 		width: 3rem;
 		height: 3rem;
- 		
-		svg{
+
+		svg {
 			fill: $primary;
 		}
 	}
 
 	.carousel__prev {
 		left: 5%;
- 		background-color: transparent;
+		background-color: transparent;
 		border: 1px solid white;
 	}
 
 	.carousel__next {
 		right: 5%;
- 		background-color: white;
+		background-color: white;
 	}
-	
+
 }
 
 .slide {
@@ -71,21 +70,21 @@ export default defineComponent({
 	height: calc(100vh - 6rem);
 	background-color: $grey;
 
-	color:  $text;
+	color: $text;
 	font-size: 2rem;
-	
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	position: relative;
 	overflow: hidden;
-	
-    img{
+
+	img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		object-position: bottom;
+		object-position: center;
 	}
 }
 
@@ -94,13 +93,14 @@ export default defineComponent({
 		.carousel__prev {
 			left: 10%;
 		}
+
 		.carousel__next {
 			right: 10%;
 		}
 	}
-	.slide{
+
+	.slide {
 		height: calc(50vh - 6rem);
 	}
 }
-
 </style>
