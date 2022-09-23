@@ -80,13 +80,13 @@ export const estate: Array<estate_T> = [
 		poster: '/estate/katafanga.webp',
 		title: 'katafanga',
 		subtitle: 'private island',
-		description: 'description',
+		description: 'Nestled in the heart of the South pacific, on a lush private island in the far reaches of Fiji, you will find Katafanga Island Resort & Spa. Guests will enjoy a memorable vacation experience at this luxury resort, where the emphasis is on unparalleled personalized service, deliciously exciting cuisine, revitalizing spa treatments, and exquisite accommodations – all set amidst some of the most breathtaking tropical scenery in the world',
 	},
 	{
 		poster: '/estate/continuum.webp',
 		title: 'continuum',
 		subtitle: 'south beach',
-		description: 'description',
+		description: 'Continuum South Beach is the new resort-style condominium in the impressive Miami Beach. With two astonishing towers and a total of 505 units, Continuum also boasts some of the most exclusive amenities like an infinity-edge lap pool, tennis courts, a fully equipped, three-story fitness center, and a sundeck, among others. This luxury development also has a one-of-kind beachfront location offering breathtaking views of the city, bay, and ocean.',
 	},
 	{
 		poster: '/estate/fivepark.webp',
