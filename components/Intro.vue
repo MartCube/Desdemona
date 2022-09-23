@@ -7,23 +7,23 @@
 
 <script setup lang="ts">
 defineProps<{
-  title: string
-  subtitle: string
-  white?: boolean
+	title: string
+	subtitle: string
+	white?: boolean
 }>()
 </script>
 
 <style lang="scss" scoped>
-.intro{
+.intro {
 	width: 100%;
-	height: 40vh;
-	background: $primary;
+	height: 50vh;
+	background-image: linear-gradient(90deg, hsl(203deg 64% 38%) 0%, hsl(205deg 52% 40%) 19%, hsl(206deg 43% 41%) 28%, hsl(207deg 36% 41%) 35%, hsl(208deg 31% 42%) 41%, hsl(208deg 25% 42%) 47%, hsl(209deg 21% 42%) 53%, hsl(210deg 16% 42%) 59%, hsl(210deg 12% 42%) 65%, hsl(211deg 8% 42%) 72%, hsl(211deg 4% 41%) 81%, hsl(0deg 0% 41%) 100%);
 	color: $white;
 	margin-bottom: 5rem;
 
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 
 	h2 {
@@ -32,16 +32,18 @@ defineProps<{
 		font-size: 1rem;
 		font-weight: 300;
 
-        display: flex;
+		display: flex;
 		align-items: center;
-		&:before{
+
+		&:before {
 			content: '';
 			width: 2.5rem;
 			height: 2px;
 			margin-right: 1rem;
 			background: $white;
 		}
-		&:after{
+
+		&:after {
 			content: '';
 			width: 2.5rem;
 			height: 2px;
@@ -49,8 +51,8 @@ defineProps<{
 			background: $white;
 		}
 	}
+
 	h1 {
-		margin-bottom: 5rem;
 		text-transform: uppercase;
 		font-size: 2.5rem;
 		font-weight: 700;
@@ -60,29 +62,32 @@ defineProps<{
 	&.white {
 		background: $white;
 		margin: 0;
-		
-		h2{
+
+		h2 {
 			color: $primary;
+
 			&:before,
 			&:after {
 				background: $primary;
 			}
 		}
-		h1{
+
+		h1 {
 			color: $text;
 		}
 	}
 }
 
 @media (max-width: $width) {
-	.intro{
+	.intro {
 		height: 50vh;
-		background-image: linear-gradient(90deg, hsl(203deg 64% 38%) 0%,hsl(205deg 52% 40%) 19%,hsl(206deg 43% 41%) 28%,hsl(207deg 36% 41%) 35%,hsl(208deg 31% 42%) 41%,hsl(208deg 25% 42%) 47%,hsl(209deg 21% 42%) 53%,hsl(210deg 16% 42%) 59%,hsl(210deg 12% 42%) 65%,hsl(211deg 8% 42%) 72%,hsl(211deg 4% 41%) 81%,hsl(0deg 0% 41%) 100%);
 		margin-bottom: 0;
 		justify-content: center;
-		h1{
+
+		h1 {
 			margin: 0;
 		}
+
 		&.white {
 			background: $grey;
 		}
@@ -90,11 +95,12 @@ defineProps<{
 }
 
 @media (max-width: 45rem) {
-	.intro{
-		h1{
+	.intro {
+		h1 {
 			font-size: 1.5rem;
 		}
-		h2{
+
+		h2 {
 			font-size: 1rem;
 		}
 	}

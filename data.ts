@@ -29,22 +29,28 @@ export const links: Array<link_T> = [
 
 export const equity: Array<equity_T> = [
 	{
+		poster: '/equity/villazzo.png',
+		title: 'villazzo',
+		link: 'https://www.villazzo.com/',
+		description: 'Villazzo Investments is a partnership of elite investors that have taken advantage of the safe asset class of exclusive luxury residential real estate – the most lucrative way of investing money that Christian has attained over 15 years as an investor himself. Contact Christian if you are interested to learn more about this opportunity.',
+	},
+	{
 		poster: '/equity/the007.png',
 		title: 'the 007',
-		link: '/',
-		description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nam consequatur, laborum fugiat voluptas adipisci veniam deserunt? Numquam, dicta error? A, laudantium minus recusandae itaque possimus harum qui numquam illo debitis cupiditate eos inventore nostrum impedit molestias facilis asperiores magnam?',
+		link: 'https://www.the007percent.com/login',
+		description: 'The 0.07% is a collective clique of jet set friends. We bring together the most beautiful people, the ultra-rich and the famous.Tap into our jet set circle and mingle with new friends. Get invited to billionaires’ villa parties and dinners, meet contacts at the highest echelon of society, wherever your travels take you. Join kindred spirits on luxurious trips and sip champagne on super yachts with attractive acquaintances. Ours is a club everyone wants to be part of, but very few can join.Exclusive to accredited models and ultra-high-net-worth multi-millionaires, we operate a strict invite-only policy. To maintain the integrity of our inner circle, member’s credentials are personally vetted and approved for authenticity.As part of our network, you’ll gain instant access to our elite community and their exclusive events. Search profiles and make instant connections, host or join parties, soirees, and trips, in far-flung hotspots around the world.For friendship, for fun, for romance, for socializing or partying - for every corner of the well-heeled world.',
 	},
 	{
 		poster: '/equity/omp.png',
-		title: 'omp',
-		link: '/',
-		description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, illum necessitatibus? Tempora eligendi illo praesentium aliquam delectus, recusandae dolore perferendis, fuga autem beatae consequuntur a exercitationem libero numquam architecto vitae!',
+		title: 'one model place',
+		link: 'https://www.onemodelplace.com/',
+		description: 'With a network of over 200,000 active members, One Model Place is the top market place for models, photographers, and creative talents in fashion to look for work. Add your online modeling portfolio to OMP so that prospective clients can view and make direct bookings. Modeling profiles are completely customizable, allowing you to add your Instagram feed for potential clients to view. So far, thousands of members have been scouted by industry professionals for both castings and work. Join our community as an OMP model to get started!',
 	},
 	{
 		poster: '/equity/top7.png',
 		title: 'top 7',
 		link: '/',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores alias tenetur, vitae dignissimos, provident id sed cumque recusandae nesciunt magni a laborum inventore eligendi saepe repellat. Blanditiis eligendi laboriosam optio possimus ea quisquam non, dolores, fugit eius harum deleniti repudiandae.',
+		description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga placeat dolorem nisi quae aliquid est porro consequuntur enim quis saepe.',
 	},
 	{
 		poster: '/equity/hookah.png',
@@ -72,6 +78,12 @@ export const team: Array<member_T> = [
 		name: 'Ivonne Avendano',
 		position: 'Executive Assistant',
 		description: 'Ivonne graduated from Barry University with her B.A. in business management. Over the course of her career, she has worked in the capacities of bookkeeper and business manager for a diverse array of organizations, giving her a dynamic set of skills and expertise in her administrative role at Desdemona. Ivonne speaks both English and Spanish fluently.',
+	},
+	{
+		image: '/members/arpadd.webp',
+		name: 'Arpad Dobos',
+		position: 'Project Manager',
+		description: 'Arpad Dobos, J.D. is a highly organized Project Manager with over 20 years of experience setting goals, timeline progress points, and operations scale and management strategies. Proven leader who defines and supervises team member roles and expectations while balancing conflicting priorities across multiple assignments. Excellent executive communication multilingual skills. Expertise in information technology, data analytics, and data privacy in both large organizations and startups. Arpad studied law at the University of Miskolc, the most prestigious law school in Hungary. He also co-founded a first-of-its kind sports analytics company in the U.S. that offered professional sports teams video tracking technology and insights to improve player performance.',
 	},
 ]
 

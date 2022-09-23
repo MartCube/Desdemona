@@ -28,7 +28,7 @@ import { equity } from "~/data"
 			align-items: center;
 
 			img {
-				width: 12rem;
+				width: 17%;
 				height: 100%;
 				max-height: 10rem;
 				object-fit: contain;
@@ -46,12 +46,7 @@ import { equity } from "~/data"
 	}
 }
 
-// @media (max-width: $width) {
-// 	.equity_section .wrap .grid img{
-// 		width: 10rem;
-// 		height: 5.5rem;
-// 	}
-// }
+
 
 @media (max-width: 45rem) {
 	.equity_section {
@@ -61,7 +56,7 @@ import { equity } from "~/data"
 
 				img {
 					width: 40%;
-					height: initial;
+					height: 5rem;
 				}
 			}
 		}
