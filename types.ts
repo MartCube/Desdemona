@@ -12,6 +12,7 @@ export interface equity_T {
 
 export interface estate_T {
 	poster?: string,
+	link?: string,
 	title: string,
 	subtitle: string,
 	description: string,

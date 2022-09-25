@@ -1,6 +1,6 @@
 <template>
 	<div class="estate_card">
-		<NuxtLink class="image" to="/real-estate">
+		<NuxtLink class="image" :to="data.link" target="_blank">
 			<div class="gradient"></div>
 			<img v-if="data.poster" v-lazy="data.poster">
 			<div class="info">

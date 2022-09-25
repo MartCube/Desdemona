@@ -90,21 +90,31 @@ export const team: Array<member_T> = [
 export const estate: Array<estate_T> = [
 	{
 		poster: '/estate/katafanga.webp',
+		link: 'http://www.katafanga.com/',
 		title: 'katafanga',
 		subtitle: 'private island',
 		description: 'Nestled in the heart of the South pacific, on a lush private island in the far reaches of Fiji, you will find Katafanga Island Resort & Spa. Guests will enjoy a memorable vacation experience at this luxury resort, where the emphasis is on unparalleled personalized service, deliciously exciting cuisine, revitalizing spa treatments, and exquisite accommodations – all set amidst some of the most breathtaking tropical scenery in the world',
 	},
 	{
 		poster: '/estate/continuum.webp',
+		link: 'https://www.continummsouthbeach.com/#initial',
 		title: 'continuum',
 		subtitle: 'south beach',
 		description: 'Continuum South Beach is the new resort-style condominium in the impressive Miami Beach. With two astonishing towers and a total of 505 units, Continuum also boasts some of the most exclusive amenities like an infinity-edge lap pool, tennis courts, a fully equipped, three-story fitness center, and a sundeck, among others. This luxury development also has a one-of-kind beachfront location offering breathtaking views of the city, bay, and ocean.',
 	},
 	{
 		poster: '/estate/fivepark.webp',
+		link: 'https://fivepark.com/',
 		title: 'Five Park',
 		subtitle: 'miami beach',
 		description: "The newest luxury residential tower is coming to Miami Beach. With spectacular bay and ocean 360-degree views, this stunning creation from the world’s most visionary design minds features residences with vast balconies, lofty ceilings, and state-of-the-art appliances. The building has exceptional amenities across 50,000 square feet, including an onsite spa and wellness center. Additionally, residents have access to a private beach club and a three-acre park right outside the front door.",
+	},
+	{
+		poster: '/estate/murano.webp',
+		link: 'https://www.muranogrande.com/',
+		title: 'murano grande',
+		subtitle: 'south beach',
+		description: 'The Murano Grande at Portofino is an exceptional condo tower in the prestigious South of Fifth neighborhood of South Beach. Desdemona owns a combined, completely renovated front-to-back 5-bedroom unit of approx. 4000 sqft. Its close proximity to both prime beaches and world-class shopping and nightlife make it very easy to call home.',
 	},
 ]
 
