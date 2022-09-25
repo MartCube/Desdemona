@@ -1,5 +1,6 @@
 <template>
 	<div class="page">
+		<Intro title="CEO" subtitle="Christian Jagodzinski" />
 		<div class="wrap">
 			<div class="bg"></div>
 			<div class="text">
@@ -52,11 +53,12 @@ useHead({
 <style lang="scss" scoped>
 .page {
 	width: 100%;
-	max-width: $width;
-	margin-top: 10rem;
 
+	// margin-top: 10rem;
 	.wrap {
 		width: 100%;
+		max-width: $width;
+
 		display: flex;
 		justify-content: space-between;
 		align-items: stretch;

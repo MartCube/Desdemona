@@ -87,6 +87,7 @@ defineProps<{
 		justify-content: center;
 
 		h2 {
+			text-transform: capitalize;
 			margin-bottom: 1rem;
 			font-weight: 600;
 			font-size: 2rem;

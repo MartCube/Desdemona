@@ -36,7 +36,7 @@ export const equity: Array<equity_T> = [
 	},
 	{
 		poster: '/equity/the007.png',
-		title: 'the 007',
+		title: 'the 007%',
 		link: 'https://www.the007percent.com/login',
 		description: 'The 0.07% is a collective clique of jet set friends. We bring together the most beautiful people, the ultra-rich and the famous.Tap into our jet set circle and mingle with new friends. Get invited to billionaires’ villa parties and dinners, meet contacts at the highest echelon of society, wherever your travels take you. Join kindred spirits on luxurious trips and sip champagne on super yachts with attractive acquaintances. Ours is a club everyone wants to be part of, but very few can join.Exclusive to accredited models and ultra-high-net-worth multi-millionaires, we operate a strict invite-only policy. To maintain the integrity of our inner circle, member’s credentials are personally vetted and approved for authenticity.As part of our network, you’ll gain instant access to our elite community and their exclusive events. Search profiles and make instant connections, host or join parties, soirees, and trips, in far-flung hotspots around the world.For friendship, for fun, for romance, for socializing or partying - for every corner of the well-heeled world.',
 	},
@@ -48,7 +48,7 @@ export const equity: Array<equity_T> = [
 	},
 	{
 		poster: '/equity/top7.png',
-		title: 'top 7',
+		title: 'top7',
 		link: '/',
 		description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga placeat dolorem nisi quae aliquid est porro consequuntur enim quis saepe.',
 	},
