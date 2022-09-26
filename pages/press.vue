@@ -1,21 +1,21 @@
 <template>
 	<div class="page">
-		<Intro title="press" subtitle="milestones" />
+		<!-- <Intro title="press" subtitle="milestones" /> -->
 		<div class="grid">
 			<PressCard v-for="item in press" :data="item" />
-		</div>	
+		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
 import { press } from "~/data"
 useHead({
- 	title: 'Press',
+	title: 'Press',
 })
 </script>
 
 <style lang="scss" scoped>
-.grid{
+.grid {
 	width: 100%;
 	max-width: 70rem;
 	display: flex;
@@ -25,7 +25,7 @@ useHead({
 }
 
 @media (max-width: 70rem) {
-	.grid{
+	.grid {
 		padding: 5vw;
 		max-width: initial;
 		flex-direction: column;

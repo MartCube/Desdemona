@@ -49,14 +49,14 @@ export const equity: Array<equity_T> = [
 	{
 		poster: '/equity/top7.png',
 		title: 'top7',
-		link: '/',
-		description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga placeat dolorem nisi quae aliquid est porro consequuntur enim quis saepe.',
+		link: 'www.top7.guide',
+		description: 'Tired of endless reviews, asking a friend when trying to look up favorite local bar, or restaurant? We were too! With Top7, we are looking to bring simplicity back. Only view the top 7 Restaurants, Bars & Clubs across most famous travel sites around the world. Build your search from google ratings, your friends ratings, and expert users. Your leaderboard based on how your network rated them. Create your lists and share it with friends.',
 	},
 	{
 		poster: '/equity/hookah.png',
 		title: 'hookah',
 		link: '/',
-		description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga placeat dolorem nisi quae aliquid est porro consequuntur enim quis saepe.',
+		description: 'We are developing a “cartridge-based” shisha system for “healthy smoking”, i.e., instead of smoke, you’re inhaling purified air with added oxygen. Our system is healthy and doesn’t cause lung, mouth, throat, stomach, kidney, pancreas, liver, or colon cancer that traditional tobacco base cigarettes can.',
 	},
 ]
 
@@ -70,7 +70,7 @@ export const team: Array<member_T> = [
 	{
 		image: '/members/jkaplan.webp',
 		name: 'Jarret Kaplan',
-		position: 'CPA',
+		position: 'CPA/CFO',
 		description: 'Jarret Kaplan is an American attorney with a BS in Accounting and MS in Taxation. He received his Juris Doctorate from Florida International University College of Law in Miami, and has worked for Gidney & Co., C.P.A. and Mallah Furman C.P.A., specializing in a wide range of tax issues. He currently operates his own practice at Jarret W. Kaplan, P.A. and is a Florida licensed Certified Public Accountant, a Member of the Florida Bar, and was admitted to practice before the United States Tax Court in 2007. Jarret currently oversees all tax-related issues pertaining to Desdemona.',
 	},
 	{

@@ -1,6 +1,6 @@
 <template>
 	<div class="page">
-		<Intro title="private equity" subtitle="highlights" />
+		<!-- <Intro title="private equity" subtitle="highlights" /> -->
 		<div class="grid">
 			<EquityCard v-for="item in equity" :data="item" />
 		</div>
@@ -10,12 +10,12 @@
 <script setup lang="ts">
 import { equity } from "~/data"
 useHead({
- 	title: 'Private Equity',
+	title: 'Private Equity',
 })
 </script>
 
 <style lang="scss" scoped>
-.grid{
+.grid {
 	width: 100%;
 	max-width: $width;
 	display: flex;
@@ -24,7 +24,7 @@ useHead({
 }
 
 @media (max-width: $width) {
-	.grid{
+	.grid {
 		padding: 5vw 5vw 0 5vw;
 		flex-direction: column;
 		align-items: center;

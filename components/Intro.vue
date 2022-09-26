@@ -1,16 +1,45 @@
 <template>
-	<div class="intro" :class="{ white: white }">
-		<h2>{{ subtitle }}</h2>
-		<h1>{{ title }}</h1>
+	<!-- :class="{ white: data.white }" -->
+	<div class="intro">
+		<h2>{{ t.subtitle}}</h2>
+		<h1>{{ t.title }}</h1>
 	</div>
 </template>
 
 <script setup lang="ts">
-defineProps<{
-	title: string
-	subtitle: string
-	white?: boolean
-}>()
+const data = [
+	{
+		title: 'ceo',
+		subtitle: 'Christian Jagodzinski'
+	},
+	{
+		title: 'private equity',
+		subtitle: 'highlights'
+	},
+	{
+		title: 'team',
+		subtitle: 'meat our members'
+	},
+	{
+		title: 'real estate',
+		subtitle: 'select properties'
+	},
+	{
+		title: 'press',
+		subtitle: 'milestones'
+	},
+	{
+		title: 'contact',
+		subtitle: 'send a message'
+	},
+]
+
+const route = useRoute()
+const t = computed(() =>
+	data.filter(item => {
+		return item.title === route.fullPath.replaceAll('/', '').replaceAll('-', ' ')
+	})[0]
+)
 </script>
 
 <style lang="scss" scoped>

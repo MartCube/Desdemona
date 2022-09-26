@@ -1,9 +1,12 @@
 <template>
 	<div id="app">
 		<Navbar />
+		<Intro />
 		<NuxtPage />
-		<Footer/>
+		<Footer />
 	</div>
 </template>
+
+  
 
 

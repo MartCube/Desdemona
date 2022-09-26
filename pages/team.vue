@@ -1,8 +1,8 @@
 <template>
 	<div class="page">
-		<Intro title="the team members" subtitle="meet our team" />
+		<!-- <Intro title="the team members" subtitle="meet our team" /> -->
 		<div class="grid">
-			<MemberCard v-for="item in team" :data="item"/>
+			<MemberCard v-for="item in team" :data="item" />
 		</div>
 	</div>
 </template>
@@ -10,12 +10,12 @@
 <script setup lang="ts">
 import { team } from "~/data"
 useHead({
- 	title: 'Team Members',
+	title: 'Team Members',
 })
 </script>
 
 <style lang="scss" scoped>
-.grid{
+.grid {
 	width: 100%;
 	max-width: $width;
 	display: flex;
@@ -24,13 +24,15 @@ useHead({
 	flex-wrap: wrap;
 
 }
+
 @media (max-width: $width) {
-	.grid{
+	.grid {
 		padding: 5vw 5vw 0 5vw;
 	}
 }
+
 @media (max-width: 50rem) {
-	.grid{
+	.grid {
 		flex-direction: column;
 		align-items: center;
 	}

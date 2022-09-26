@@ -1,6 +1,6 @@
 <template>
 	<div class="page">
-		<Intro title="CEO" subtitle="Christian Jagodzinski" />
+		<!-- <Intro title="CEO" subtitle="Christian Jagodzinski" /> -->
 		<div class="wrap">
 			<div class="bg"></div>
 			<div class="text">

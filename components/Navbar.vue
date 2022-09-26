@@ -9,7 +9,8 @@
 				{{ item.name }}
 			</NuxtLink>
 			<NuxtLink class="contact" to="/contact" @click="menuValue = false">
-				contact <Icon name="arrow"/>
+				contact
+				<Icon name="arrow" />
 			</NuxtLink>
 		</div>
 		<div @click="menuToggle()" class="menu">
@@ -40,7 +41,7 @@ header {
 	position: relative;
 	user-select: none;
 
-	.logo{
+	.logo {
 		width: max-content;
 		height: 100%;
 		display: flex;
@@ -50,21 +51,26 @@ header {
 		text-decoration: none;
 		text-transform: uppercase;
 		color: $title;
-		h1{
+
+		h1 {
 			font-size: 2rem;
 			font-weight: 700;
-			&::first-letter{
+
+			&::first-letter {
 				color: $primary;
 			}
 		}
-		h2{
-			font-size: 1.5rem;	
+
+		h2 {
+			font-size: 1.5rem;
 			font-weight: 300;
-			&::first-letter{
+
+			&::first-letter {
 				color: $primary;
 			}
 		}
 	}
+
 	.links {
 		z-index: 2;
 		position: absolute;
@@ -79,19 +85,21 @@ header {
 		justify-content: space-evenly;
 		align-items: center;
 		overflow: hidden;
+
 		.link {
 			height: 100%;
 			display: flex;
 			align-items: center;
 			position: relative;
 
-			text-decoration: none;			
+			text-decoration: none;
 			font-size: 1rem;
 			line-height: 1rem;
 			color: $text;
 			font-weight: 600;
 			transition: all 0.2s ease;
-			&:before{
+
+			&:before {
 				content: '';
 				width: 100%;
 				height: 4px;
@@ -103,26 +111,31 @@ header {
 				opacity: 0;
 				transition: all 0.2s ease;
 			}
-			&:hover{
+
+			&:hover {
 				color: $primary;
-				&:before{
+
+				&:before {
 					transform: translateY(0);
 					opacity: 1;
 				}
 			}
+
 			&.router-link-active {
 				color: $primary;
-				&:before{
+
+				&:before {
 					transform: translateY(0);
 					opacity: 1;
 				}
 			}
 		}
+
 		.contact {
 			border: none;
 			background: $primary;
 			padding: 0.8rem 1.8rem;
-		
+
 			color: $white;
 			font-size: 1rem;
 			font-weight: 600;
@@ -130,6 +143,7 @@ header {
 			text-decoration: none;
 
 			display: flex;
+
 			.icon {
 				fill: $white;
 				width: 1rem;
@@ -138,9 +152,10 @@ header {
 			}
 		}
 	}
-	.menu{
+
+	.menu {
 		display: none;
-		z-index: 3;	
+		z-index: 3;
 		cursor: pointer;
 		user-select: none;
 	}
@@ -153,11 +168,14 @@ header {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		.links{
+
+		.links {
 			display: none;
-			&.show{
+
+			&.show {
 				display: flex;
 			}
+
 			transform: initial;
 			// position: fixed;
 			top: 6rem;
@@ -170,47 +188,54 @@ header {
 			align-items: flex-start;
 			flex-direction: column;
 			justify-content: space-around;
-			
-			.link{
+
+			.link {
 				width: max-content;
 				height: 2rem;
 				margin: 1rem 0;
-				&::before{
+
+				&::before {
 					display: none;
-				}				
+				}
 			}
-	
+
 		}
+
 		.menu {
 			display: initial;
 			width: 28px;
 			height: 28px;
+
 			svg {
 				width: 28px;
 				height: 28px;
-				&.bars{
+
+				&.bars {
 					fill: $primary;
 				}
 			}
-			
-		}
-	}
-}
-@media (max-width: 45rem) {
-	header {
-		height: 5rem;
-		.logo{
-			h1{
-				font-size: 1.5rem;
-			}
-			h2{
-				font-size: 1rem;
-			}
-		}
-		.links{
-			top: 5rem;
+
 		}
 	}
 }
 
+@media (max-width: 45rem) {
+	header {
+		height: 5rem;
+
+		.logo {
+			h1 {
+				font-size: 1.5rem;
+			}
+
+			h2 {
+				font-size: 1rem;
+			}
+		}
+
+		.links {
+			top: 5rem;
+		}
+	}
+}
 </style>
