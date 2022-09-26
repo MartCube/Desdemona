@@ -26,20 +26,12 @@
 		</div>
 		<div class="wrap">
 			<div class="text">
-				<p>Throughout his travels, however, Christian was never able to find a vacation experience that lived up to his expectations for what “luxury” is to him: Whether he was staying in a 5-star hotel or a small luxury boutique hotel,
-					neither format ever turned out to be as personalized and custom-tailored to his needs as a luxury traveler. The same was true for renting private luxury villas – more often than not, the villas themselves turned out to be much
-					less than what they were promised to be. And of course, the luxury villa option lacked any kind of professional
-					hotel-like management approach.</p>
+				<p>Over the years, Christian thus became an expert of the super-luxury residential real estate market like nobody else. He understood how to optimize maintenance costs, adjust short-term rental rates, and maximize performance of an asset class that everyone struggles to make profitable. Being at home in Miami Beach and St Tropez, this experience led him to invest in properties there and learn to play the ebb and flow of a highly lucrative real estate market to his advantage. Together with Villazzo and Desdemona, Christian Jagodzinski once again finds himself on the cutting edge of an exciting industry. </p>
 			</div>
 			<div class="video"></div>
 		</div>
 		<div class="wrap">
-			<p> From this disappointment, Christian saw a new opportunity: create a reliable “brand name” luxury villa rental company that combined the finest properties and destinations with true 5-star hotel
-				management and personal services that could be customer-tailored to the travelers needs and desires. This was the idea that led him to create Villazzo, the only true "five star hotel operator" for private luxury residences in the
-				world today.
-				Over the years, Christian thus became an expert of the super-luxury residential real estate market like nobody else. He understood how to optimize maintenance costs, adjust short-term rental rates, and maximize performance of an asset
-				class that everyone struggles to make profitable. Being at home in Miami Beach and St Tropez, this experience led him to invest in properties there and learn to play the ebb and flow of a highly lucrative real estate market to his
-				advantage. Together with Villazzo and Desdemona, Christian Jagodzinski once again finds himself on the cutting edge of an exciting industry. </p>
+			<p>Throughout his travels, however, Christian was never able to find a vacation experience that lived up to his expectations for what “luxury” is to him: Whether he was staying in a 5-star hotel or a small luxury boutique hotel, neither format ever turned out to be as personalized and custom-tailored to his needs as a luxury traveler. The same was true for renting private luxury villas – more often than not, the villas themselves turned out to be much less than what they were promised to be. And of course, the luxury villa option lacked any kind of professional hotel-like management approach. From this disappointment, Christian saw a new opportunity: create a reliable “brand name” luxury villa rental company that combined the finest properties and destinations with true 5-star hotel management and personal services that could be customer-tailored to the travelers needs and desires. This was the idea that led him to create Villazzo, the only true "five star hotel operator" for private luxury residences in the world today.</p>
 		</div>
 	</div>
 </template>

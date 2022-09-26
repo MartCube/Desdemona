@@ -4,7 +4,9 @@
 			<h3 class="subtitle">highlights</h3>
 			<h2 class="title">private equity</h2>
 			<div class="grid">
-				<img v-for="item in equity" :key="item.poster" v-lazy="item.poster">
+				<nuxt-link v-for="item in equity" :key="item.title" :to="item.link" target="_blank">
+					<img v-lazy="item.poster" />
+				</nuxt-link>
 			</div>
 			<NuxtLink class="link" to='/private-equity'>learn more</NuxtLink>
 		</div>
@@ -27,21 +29,27 @@ import { equity } from "~/data"
 			justify-content: space-between;
 			align-items: center;
 
-			img {
+			a {
 				width: 17%;
 				height: 100%;
-				max-height: 10rem;
-				object-fit: contain;
 
-				&[lazy=loading] {
-					opacity: 0;
-				}
+				img {
+					width: 100%;
+					height: 100%;
+					max-height: 10rem;
+					object-fit: contain;
 
-				&[lazy=loaded] {
-					opacity: 1;
-					transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+					&[lazy=loading] {
+						opacity: 0;
+					}
+
+					&[lazy=loaded] {
+						opacity: 1;
+						transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+					}
 				}
 			}
+
 		}
 	}
 }
@@ -54,7 +62,7 @@ import { equity } from "~/data"
 			.grid {
 				flex-wrap: wrap;
 
-				img {
+				a {
 					width: 40%;
 					height: 5rem;
 				}

@@ -4,7 +4,7 @@
 			<h3 class="subtitle">select properties</h3>
 			<h2 class="title">real estate</h2>
 			<div class="grid">
-				<EstateCard v-for="item in estate" :data="item" />
+				<EstateCard v-for="item in data" :data="item" />
 			</div>
 			<NuxtLink class="link" to='/real-estate'>learn more</NuxtLink>
 		</div>
@@ -14,7 +14,7 @@
 <script setup lang="ts">
 import { estate } from "~/data"
 
-// const data = estate.slice(0, 3);
+const data = estate.slice(0, 3);
 </script>
 
 <style lang="scss" scoped>
@@ -29,8 +29,6 @@ import { estate } from "~/data"
 		justify-content: space-between;
 
 		.estate_card {
-			width: 20%;
-			height: 14rem;
 			margin: 0;
 
 			.image {
