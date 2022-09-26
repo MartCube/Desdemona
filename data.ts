@@ -44,7 +44,7 @@ export const equity: Array<equity_T> = [
 		poster: '/equity/omp.png',
 		title: 'one model place',
 		link: 'https://www.onemodelplace.com/',
-		description: 'With a network of over 200,000 active members, One Model Place is the top market place for models, photographers, and creative talents in fashion to look for work. Add your online modeling portfolio to OMP so that prospective clients can view and make direct bookings. Modeling profiles are completely customizable, allowing you to add your Instagram feed for potential clients to view. So far, thousands of members have been scouted by industry professionals for both castings and work. Join our community as an OMP model to get started!',
+		description: 'With a network of over 200,000 active members, One Model Place is the top market place for models, photographers, and creative talents in fashion to look for work. Add your online modeling portfolio to OMP so that prospective clients can view and make direct bookings. Modeling profiles are completely customizable, allowing you to add your Instagram feed for potential clients to view.',
 	},
 	{
 		poster: '/equity/top7.png',
