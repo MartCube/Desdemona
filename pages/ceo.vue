@@ -36,8 +36,8 @@
 		<div class="wrap">
 			<p> From this disappointment, Christian saw a new opportunity: create a reliable “brand name” luxury villa rental company that combined the finest properties and destinations with true 5-star hotel
 				management and personal services that could be customer-tailored to the travelers needs and desires. This was the idea that led him to create Villazzo, the only true "five star hotel operator" for private luxury residences in the
-				world today.</p>
-			<p>Over the years, Christian thus became an expert of the super-luxury residential real estate market like nobody else. He understood how to optimize maintenance costs, adjust short-term rental rates, and maximize performance of an asset
+				world today.
+				Over the years, Christian thus became an expert of the super-luxury residential real estate market like nobody else. He understood how to optimize maintenance costs, adjust short-term rental rates, and maximize performance of an asset
 				class that everyone struggles to make profitable. Being at home in Miami Beach and St Tropez, this experience led him to invest in properties there and learn to play the ebb and flow of a highly lucrative real estate market to his
 				advantage. Together with Villazzo and Desdemona, Christian Jagodzinski once again finds himself on the cutting edge of an exciting industry. </p>
 		</div>
@@ -70,7 +70,7 @@ useHead({
 
 		.text {
 			width: 48%;
-			color: $title;
+			color: $logo;
 
 			h3 {
 				margin-bottom: 1rem;
@@ -81,7 +81,7 @@ useHead({
 				text-transform: capitalize;
 				color: $primary;
 				font-size: 1.5rem;
-				font-weight: 300;
+				font-weight: normal;
 
 				&:before {
 					content: '';
@@ -96,7 +96,7 @@ useHead({
 				margin-bottom: 0.5rem;
 				text-transform: uppercase;
 				font-size: 3rem;
-				font-weight: 700;
+				font-weight: bold;
 
 				&::first-letter {
 					color: $primary;
@@ -107,7 +107,7 @@ useHead({
 				margin-bottom: 1rem;
 				text-transform: uppercase;
 				font-size: 2rem;
-				font-weight: 300;
+				font-weight: normal;
 
 				&::first-letter {
 					color: $primary;

@@ -66,7 +66,7 @@ defineProps<{
 			text-decoration: none;
 			color: $white;
 			font-size: 0.8rem;
-			font-weight: 700;
+			font-weight: bold;
 
 			display: flex;
 			align-items: center;
@@ -84,17 +84,17 @@ defineProps<{
 		width: 45%;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 
 		h2 {
 			text-transform: capitalize;
 			margin-bottom: 1rem;
-			font-weight: 600;
-			font-size: 2rem;
+			font-weight: normal;
+			font-size: 1.5rem;
 		}
 
 		p {
 			line-height: 2rem;
+			color: #3e3d40;
 		}
 	}
 }

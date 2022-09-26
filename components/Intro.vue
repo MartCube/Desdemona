@@ -59,7 +59,7 @@ const t = computed(() =>
 		margin-bottom: 1rem;
 		text-transform: capitalize;
 		font-size: 1rem;
-		font-weight: 300;
+		font-weight: normal;
 
 		display: flex;
 		align-items: center;
@@ -84,7 +84,7 @@ const t = computed(() =>
 	h1 {
 		text-transform: uppercase;
 		font-size: 2.5rem;
-		font-weight: 700;
+		font-weight: bold;
 		text-align: center;
 	}
 

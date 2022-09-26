@@ -50,11 +50,11 @@ header {
 
 		text-decoration: none;
 		text-transform: uppercase;
-		color: $title;
+		color: $logo;
 
 		h1 {
 			font-size: 2rem;
-			font-weight: 700;
+			font-weight: bold;
 
 			&::first-letter {
 				color: $primary;
@@ -63,7 +63,7 @@ header {
 
 		h2 {
 			font-size: 1.5rem;
-			font-weight: 300;
+			font-weight: normal;
 
 			&::first-letter {
 				color: $primary;
@@ -96,7 +96,7 @@ header {
 			font-size: 1rem;
 			line-height: 1rem;
 			color: $text;
-			font-weight: 600;
+			font-weight: normal;
 			transition: all 0.2s ease;
 
 			&:before {
@@ -138,7 +138,7 @@ header {
 
 			color: $white;
 			font-size: 1rem;
-			font-weight: 600;
+			font-weight: bold;
 			text-transform: uppercase;
 			text-decoration: none;
 

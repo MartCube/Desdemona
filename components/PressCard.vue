@@ -2,14 +2,7 @@
 	<div class="press_card">
 		<div class="media">
 			<div v-if="data.video" class="video">
-				<iframe 
-					width="100%" 
-					height="360" 
-					:src="data.video" 
-					title="YouTube video player" 
-					frameborder="0" 
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					/>
+				<iframe width="100%" height="360" :src="data.video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
 			</div>
 			<div v-if="data.poster" class="poster">
 				<img :src="data.poster" alt="">
@@ -41,62 +34,72 @@ defineProps<{
 
 	display: flex;
 	flex-direction: column;
-	.media{
+
+	.media {
 		width: 100%;
 		height: 22.5rem;
 		background: #bebebe;
 	}
-	.info{
+
+	.info {
 		padding: 2rem;
 
-		.author{
+		.author {
 			margin: 2rem 0;
 			text-transform: capitalize;
-			font-weight: 300;
+			font-weight: normal;
 
 			display: flex;
 			align-items: center;
-			&:before{
-					content: '';
-					width: 2rem;
-					height: 2rem;
-					border-radius: 50%;
-					margin-right: 1rem;
-					background: $dark-grey;
-				}
+
+			&:before {
+				content: '';
+				width: 2rem;
+				height: 2rem;
+				border-radius: 50%;
+				margin-right: 1rem;
+				background: $dark-grey;
+			}
 		}
-		h2{
+
+		h2 {
 			font-size: 2rem;
 			line-height: 3rem;
+
 			// margin-bottom: 2rem;
-			&::first-letter{
+			&::first-letter {
 				text-transform: capitalize;
 			}
 		}
-		p{
+
+		p {
 			line-height: 1.5rem;
-			
+
 		}
 	}
 }
 
 @media (max-width: 45rem) {
-	.press_card{
+	.press_card {
 		margin-bottom: 2rem;
-		.media{
+
+		.media {
 			height: 18rem;
-			iframe{
+
+			iframe {
 				height: 18rem;
 			}
 		}
-		.info{
-			h2{
+
+		.info {
+			h2 {
 				font-size: 1.5rem;
 				line-height: 2rem;
 			}
-			p{
+
+			p {
 				font-size: 0.9rem;
-				
+
 			}
 		}
 	}

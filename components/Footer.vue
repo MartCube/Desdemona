@@ -15,20 +15,22 @@ footer {
 	justify-content: center;
 
 	user-select: none;
-	p{
-		font-weight: 100;
+
+	p {
+		font-weight: normal;
 		font-size: 1rem;
 		color: $white;
+
 		span {
 			text-transform: capitalize;
-			font-weight: 600;
+			font-weight: bold;
 		}
 	}
 }
 
 @media (max-width: 60rem) {
-footer p {
-	font-size: 0.8rem;
-}
+	footer p {
+		font-size: 0.8rem;
+	}
 }
 </style>

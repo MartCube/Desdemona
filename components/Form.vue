@@ -1,5 +1,5 @@
 <template>
-	<form ref="form" @submit="onSubmit" autocomplete="off"> 
+	<form ref="form" @submit="onSubmit" autocomplete="off">
 		<div class="input_wrap">
 			<input name="name" placeholder="Name" v-model="values.name" />
 			<span class="error" v-show="submitCount > 0">{{ errors.name }}</span>
@@ -13,11 +13,12 @@
 			<span class="error" v-show="submitCount > 0">{{ errors.phone }}</span>
 		</div>
 		<div class="textarea_wrap">
-			<textarea name="message" placeholder="Message" rows="10" v-model="values.message"/>
+			<textarea name="message" placeholder="Message" rows="10" v-model="values.message" />
 			<span class="error" v-show="submitCount > 0">{{ errors.message }}</span>
 		</div>
 		<button class="submit" type="submit">
-			send message <Icon name="arrow"/>
+			send message
+			<Icon name="arrow" />
 		</button>
 		<div v-if="msg" class="msg">
 			<h2>Thank you</h2>
@@ -48,10 +49,10 @@ const { values, errors, handleSubmit, submitCount } = useForm<ContactForm>({
 	validationSchema,
 })
 
-const onSubmit = handleSubmit(async(values, actions) => {
-	
-	emailjs.sendForm('service_f8wwkf9', 'template_36b5j8o', form.value, 'YVzaQIyzcpywjD7jW').then((result) => { console.log('SUCCESS!', result.text) },(error) => { console.log('FAILED...', error.text) },)
-	
+const onSubmit = handleSubmit(async (values, actions) => {
+
+	emailjs.sendForm('service_f8wwkf9', 'template_36b5j8o', form.value, 'YVzaQIyzcpywjD7jW').then((result) => { console.log('SUCCESS!', result.text) }, (error) => { console.log('FAILED...', error.text) },)
+
 	// show msg
 	msg.value = true
 	actions.resetForm()
@@ -70,10 +71,12 @@ form {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	position: relative;
-	.input_wrap{
+
+	.input_wrap {
 		width: 30%;
 		max-width: 20rem;
 		position: relative;
+
 		input {
 			width: 100%;
 			height: 4rem;
@@ -83,13 +86,14 @@ form {
 
 			border: none;
 			background: #f3f3f6;
-			font-size:1rem;
-			font-weight: 400;
+			font-size: 1rem;
+			font-weight: normal;
 
 			&::placeholder {
 				font-size: 1rem;
 			}
 		}
+
 		.error {
 			position: absolute;
 			top: 0.7rem;
@@ -98,10 +102,12 @@ form {
 			font-size: 0.7rem;
 		}
 	}
-	.textarea_wrap{
+
+	.textarea_wrap {
 		width: 100%;
 		position: relative;
-		textarea { 
+
+		textarea {
 			width: 100%;
 			padding: 1.5rem;
 
@@ -110,12 +116,13 @@ form {
 			background: #f3f3f6;
 
 			font-size: 1rem;
-			font-weight: 400;
+			font-weight: normal;
 
 			&::placeholder {
 				font-size: 1rem;
 			}
 		}
+
 		.error {
 			position: absolute;
 			top: 0.7rem;
@@ -124,7 +131,8 @@ form {
 			font-size: 0.7rem;
 		}
 	}
-	.submit{
+
+	.submit {
 		position: absolute;
 		bottom: 5rem;
 		right: 5rem;
@@ -139,17 +147,19 @@ form {
 		background: $primary;
 		color: $white;
 		font-size: 1rem;
-		font-weight: 600;
-		text-transform: uppercase;	
+		font-weight: bold;
+		text-transform: uppercase;
 		cursor: pointer;
-		.icon{
-			fill:$white;
+
+		.icon {
+			fill: $white;
 			margin-left: 1rem;
 			width: 1rem;
 			height: 1rem;
 		}
 	}
-	.msg{
+
+	.msg {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -162,22 +172,24 @@ form {
 		justify-content: center;
 		align-items: center;
 
-		h2{
+		h2 {
 			color: $primary;
 			text-transform: capitalize;
 			font-size: 1.2rem;
-			font-weight: 300;
+			font-weight: normal;
 
 			display: flex;
 			align-items: center;
-			&:before{
+
+			&:before {
 				content: '';
 				width: 2.5rem;
 				height: 2px;
 				margin-right: 1rem;
 				background: $primary;
 			}
-			&:after{
+
+			&:after {
 				content: '';
 				width: 2.5rem;
 				height: 2px;
@@ -185,18 +197,20 @@ form {
 				background: $primary;
 			}
 		}
-		p{
+
+		p {
 			margin: 1rem;
 			text-align: center;
 		}
-		button{
+
+		button {
 			border: none;
 			background: $primary;
 			padding: 0.8rem 1.8rem;
-		
+
 			color: $white;
 			font-size: 1rem;
-			font-weight: 600;
+			font-weight: bold;
 			text-transform: uppercase;
 			text-decoration: none;
 			cursor: pointer;
@@ -205,35 +219,41 @@ form {
 }
 
 @media (max-width: 70rem) {
-	form{
+	form {
 		padding: 5%;
-		.submit{
+
+		.submit {
 			bottom: 5vw;
 			right: 5vw;
 		}
 	}
 }
+
 @media (max-width: 55rem) {
-	form{
-		.input_wrap{
+	form {
+		.input_wrap {
 			width: 100%;
 			max-width: initial;
-			input{
+
+			input {
 				margin-bottom: 5%;
 				height: 3rem;
 			}
-			.error{
+
+			.error {
 				top: -0.8rem;
 				right: 0.2rem;
 			}
 		}
-		.textarea_wrap{
-			.error{
+
+		.textarea_wrap {
+			.error {
 				top: -0.8rem;
 				right: 0.2rem;
 			}
 		}
-		.submit{
+
+		.submit {
 			width: 50%;
 			height: 3rem;
 		}

@@ -47,7 +47,7 @@ definePageMeta({
 			p {
 				color: white;
 				font-size: 2.5rem;
-				font-weight: 700;
+				font-weight: bold;
 				text-transform: uppercase;
 
 				margin-left: 2rem;

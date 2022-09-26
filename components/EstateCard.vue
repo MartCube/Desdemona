@@ -75,7 +75,7 @@ defineProps<{
 			h2 {
 				text-transform: capitalize;
 				font-size: 1.5rem;
-				font-weight: 600;
+				font-weight: bold;
 				text-align: center;
 				margin-bottom: 0.5rem;
 			}
@@ -83,7 +83,7 @@ defineProps<{
 			h3 {
 				text-transform: capitalize;
 				font-size: 1rem;
-				font-weight: 400;
+				font-weight: normal;
 				text-align: center;
 				margin-bottom: 1rem;
 			}
