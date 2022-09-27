@@ -8,6 +8,12 @@
 			</div>
 		</div>
 		<p>{{data.description}}</p>
+		<template v-if="link">
+			<NuxtLink class="ceo" to="/ceo">
+				learn more
+				<Icon name="arrow" />
+			</NuxtLink>
+		</template>
 	</div>
 </template>
 
@@ -15,6 +21,7 @@
 import type { member_T } from "~/types";
 defineProps<{
 	data: member_T;
+	link?: boolean
 }>();
 </script>
 
@@ -81,6 +88,31 @@ defineProps<{
 
 	p {
 		line-height: 1.5rem;
+	}
+
+	.ceo {
+		border: none;
+		width: fit-content;
+		background: $primary;
+		padding: 1rem 2rem;
+
+		margin-top: 2rem;
+
+		color: $white;
+		font-size: 1rem;
+		line-height: 1rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		display: flex;
+
+		.icon {
+			fill: $white;
+			width: 1rem;
+			height: 1rem;
+			margin-left: 1rem;
+		}
 	}
 }
 

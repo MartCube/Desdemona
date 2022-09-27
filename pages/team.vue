@@ -1,8 +1,7 @@
 <template>
 	<div class="page">
-		<!-- <Intro title="the team members" subtitle="meet our team" /> -->
 		<div class="grid">
-			<MemberCard v-for="item in team" :data="item" />
+			<MemberCard v-for="(item, i) in team" :data="item" :link="i == 0" />
 		</div>
 	</div>
 </template>

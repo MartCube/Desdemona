@@ -138,6 +138,7 @@ header {
 
 			color: $white;
 			font-size: 1rem;
+			line-height: 1rem;
 			font-weight: bold;
 			text-transform: uppercase;
 			text-decoration: none;

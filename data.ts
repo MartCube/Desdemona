@@ -1,5 +1,6 @@
 import type { press_T, equity_T, link_T, estate_T, member_T } from "~/types"
 
+// Navbar Links
 export const links: Array<link_T> = [
 	{
 		name: 'Home',
@@ -26,7 +27,7 @@ export const links: Array<link_T> = [
 		url: '/press'
 	},
 ]
-
+// Private Equity
 export const equity: Array<equity_T> = [
 	{
 		poster: '/equity/villazzo.png',
@@ -49,17 +50,17 @@ export const equity: Array<equity_T> = [
 	{
 		poster: '/equity/top7.png',
 		title: 'top7',
-		link: 'www.top7.guide',
+		link: 'https://www.top7.guide/',
 		description: 'Tired of endless reviews, asking a friend when trying to look up favorite local bar, or restaurant? We were too! With Top7, we are looking to bring simplicity back. Only view the top 7 Restaurants, Bars & Clubs across most famous travel sites around the world. Build your search from google ratings, your friends ratings, and expert users. Your leaderboard based on how your network rated them. Create your lists and share it with friends.',
 	},
 	{
 		poster: '/equity/hookah.png',
 		title: 'hookah',
-		link: '/',
+		link: '',
 		description: 'We are developing a “cartridge-based” shisha system for “healthy smoking”, i.e., instead of smoke, you’re inhaling purified air with added oxygen. Our system is healthy and doesn’t cause lung, mouth, throat, stomach, kidney, pancreas, liver, or colon cancer that traditional tobacco base cigarettes can.',
 	},
 ]
-
+// Team Members
 export const team: Array<member_T> = [
 	{
 		image: '/members/cjagodzinski.webp',
@@ -86,38 +87,38 @@ export const team: Array<member_T> = [
 		description: 'Arpad Dobos, J.D. is a highly organized Project Manager with over 20 years of experience setting goals, timeline progress points, and operations scale and management strategies. Proven leader who defines and supervises team member roles and expectations while balancing conflicting priorities across multiple assignments. Excellent executive communication multilingual skills. Expertise in information technology, data analytics, and data privacy in both large organizations and startups. Arpad studied law at the University of Miskolc, the most prestigious law school in Hungary. He also co-founded a first-of-its kind sports analytics company in the U.S. that offered professional sports teams video tracking technology and insights to improve player performance.',
 	},
 ]
-
+// Real Estate
 export const estate: Array<estate_T> = [
 	{
 		poster: '/estate/katafanga.webp',
 		link: 'http://www.katafanga.com/',
 		title: 'katafanga',
 		subtitle: 'private island',
-		description: 'Nestled in the heart of the South pacific, on a lush private island in the far reaches of Fiji, you will find Katafanga Island Resort & Spa. Guests will enjoy a memorable vacation experience at this luxury resort, where the emphasis is on unparalleled personalized service, deliciously exciting cuisine, revitalizing spa treatments, and exquisite accommodations – all set amidst some of the most breathtaking tropical scenery in the world',
+		description: 'Nestled in the heart of the South pacific, on a lush private island in the far reaches of Fiji, you will find Katafanga Island. Guests will enjoy a memorable vacation experience at this luxury resort, where the emphasis is on unparalleled personalized service, deliciously exciting cuisine, revitalizing spa treatments, and exquisite accommodations – all set amidst some of the most breathtaking scenery in the world',
 	},
 	{
 		poster: '/estate/continuum.webp',
 		link: 'https://www.continummsouthbeach.com/#initial',
 		title: 'continuum',
 		subtitle: 'south beach',
-		description: 'Continuum South Beach is the new resort-style condominium in the impressive Miami Beach. With two astonishing towers and a total of 505 units, Continuum also boasts some of the most exclusive amenities like an infinity-edge lap pool, tennis courts, a fully equipped, three-story fitness center, and a sundeck, among others. This luxury development also has a one-of-kind beachfront location offering breathtaking views of the city, bay, and ocean.',
+		description: 'Continuum South Beach is the new resort-style condominium in the impressive Miami Beach. With two astonishing towers and a total of 505 units, Continuum also boasts some of the most exclusive amenities like an infinity-edge lap pool, tennis courts, a fully equipped, three-story fitness center, and a sundeck, among others. This luxury development also has a one-of-kind beachfront location offering breathtaking views of the city, bay, and ocean',
 	},
 	{
 		poster: '/estate/fivepark.webp',
 		link: 'https://fivepark.com/',
 		title: 'Five Park',
 		subtitle: 'miami beach',
-		description: "The newest luxury residential tower is coming to Miami Beach. With spectacular bay and ocean 360-degree views, this stunning creation from the world’s most visionary design minds features residences with vast balconies, lofty ceilings, and state-of-the-art appliances. The building has exceptional amenities across 50,000 square feet, including an onsite spa and wellness center. Additionally, residents have access to a private beach club and a three-acre park right outside the front door.",
+		description: "The newest luxury residential tower is coming to Miami Beach. With spectacular bay and ocean 360-degree views, this stunning creation from the world’s most visionary design minds features residences with vast balconies, lofty ceilings, and state-of-the-art appliances. The building has exceptional amenities across 50,000 square feet, including an onsite spa and wellness center. Additionally, residents have access to a private beach club and a three-acre park right outside the front door",
 	},
 	{
 		poster: '/estate/murano.webp',
 		link: 'https://www.muranogrande.com/',
 		title: 'murano grande',
 		subtitle: 'south beach',
-		description: 'The Murano Grande at Portofino is an exceptional condo tower in the prestigious South of Fifth neighborhood of South Beach. Desdemona owns a combined, completely renovated front-to-back 5-bedroom unit of approx. 4000 sqft. Its close proximity to both prime beaches and world-class shopping and nightlife make it very easy to call home.',
+		description: 'The Murano Grande at Portofino is an exceptional condo tower in the prestigious South of Fifth neighborhood of South Beach. Desdemona owns a combined, completely renovated front-to-back 5-bedroom unit of approx. 4000 sqft. Its close proximity to both prime beaches and world-class shopping and nightlife make it very easy to call home',
 	},
 ]
-
+// Press
 export const press: Array<press_T> = [
 	{
 		video: 'https://www.youtube.com/embed/AvYDYcrbHj0',
