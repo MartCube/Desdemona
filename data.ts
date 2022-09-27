@@ -36,7 +36,7 @@ export const equity: Array<equity_T> = [
 	},
 	{
 		poster: '/equity/the007.png',
-		title: 'the 007%',
+		title: 'the 0.07%',
 		link: 'https://www.the007percent.com/login',
 		description: 'The 0.07% is a collective clique of jet set friends. We bring together the most beautiful people, the ultra-rich and the famous.Tap into our jet set circle and mingle with new friends. Get invited to billionaires’ villa parties and dinners, meet contacts at the highest echelon of society, wherever your travels take you. Join kindred spirits on luxurious trips and sip champagne on super yachts with attractive acquaintances.',
 	},

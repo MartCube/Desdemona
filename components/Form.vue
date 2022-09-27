@@ -136,7 +136,7 @@ form {
 		position: absolute;
 		bottom: 5rem;
 		right: 5rem;
-		width: calc(30% - 5vw);
+		width: 25%;
 		height: 4rem;
 
 		display: flex;
