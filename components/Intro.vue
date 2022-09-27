@@ -109,7 +109,7 @@ const t = computed(() =>
 
 @media (max-width: $width) {
 	.intro {
-		height: 50vh;
+		height: 20rem;
 		margin-bottom: 0;
 		justify-content: center;
 
