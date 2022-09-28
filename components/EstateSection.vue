@@ -52,8 +52,8 @@ const data = estate.slice(0, 3);
 @media (max-width: 32rem) {
 	.estate_section .wrap .grid {
 		.estate_card {
-			width: 45%;
-			height: 12rem;
+			width: 40vw;
+			height: 40vw;
 		}
 	}
 }

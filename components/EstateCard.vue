@@ -31,7 +31,6 @@ defineProps<{
 	.image {
 		width: 100%;
 		height: 18rem;
-		margin-bottom: 2rem;
 		position: relative;
 		background: $dark-grey;
 
@@ -91,6 +90,7 @@ defineProps<{
 	}
 
 	p {
+		margin-top: 2rem;
 		line-height: 1.5rem;
 	}
 }

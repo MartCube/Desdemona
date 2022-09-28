@@ -47,6 +47,7 @@ const data = press.slice(0, 2);
 	justify-content: space-between;
 
 	.cards {
+		width: 100%;
 		height: 26rem;
 		display: flex;
 		flex-direction: column;
@@ -68,6 +69,7 @@ const data = press.slice(0, 2);
 			}
 
 			.info {
+				width: fit-content;
 				padding: 2rem;
 				display: flex;
 				flex-direction: column;
@@ -156,6 +158,44 @@ const data = press.slice(0, 2);
 					width: 1rem;
 					height: 1rem;
 					fill: $white;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 55rem) {
+	.press_section .wrap .grid {
+		.main_card {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 32rem) {
+	.press_section .wrap .grid {
+		.cards {
+			height: fit-content;
+			flex-direction: row;
+			justify-content: space-between;
+
+			.press_card {
+				width: 40vw;
+				flex-direction: column;
+
+				.image {
+					width: 40vw;
+					height: 40vw;
+				}
+
+				.info {
+					padding: 0;
+					margin-top: 1rem;
+
+					h2 {
+						font-size: 1.5rem;
+					}
 				}
 			}
 		}
