@@ -4,7 +4,7 @@
 			<h3 class="subtitle">highlights</h3>
 			<h2 class="title">private equity</h2>
 			<div class="grid">
-				<nuxt-link v-for="item in equity" :key="item.title" :to="item.link" target="_blank">
+				<nuxt-link v-for="item in data" :key="item.title" :to="item.link" target="_blank">
 					<img v-lazy="item.poster" />
 				</nuxt-link>
 			</div>
@@ -15,6 +15,7 @@
 
 <script setup lang="ts">
 import { equity } from "~/data"
+const data = equity.slice(0, 3);
 
 </script>
 
@@ -30,7 +31,7 @@ import { equity } from "~/data"
 			align-items: center;
 
 			a {
-				width: 17%;
+				width: 25%;
 				height: 100%;
 
 				img {

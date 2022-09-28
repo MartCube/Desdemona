@@ -47,7 +47,7 @@ const data = press.slice(0, 2);
 	justify-content: space-between;
 
 	.cards {
-		width: 100%;
+		width: fit-content;
 		height: 26rem;
 		display: flex;
 		flex-direction: column;
@@ -167,6 +167,10 @@ const data = press.slice(0, 2);
 
 @media (max-width: 55rem) {
 	.press_section .wrap .grid {
+		.cards {
+			width: 100%;
+		}
+
 		.main_card {
 			display: none;
 		}

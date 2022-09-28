@@ -1,5 +1,4 @@
 <template>
-	<!-- :class="{ white: data.white }" -->
 	<div class="intro">
 		<h2>{{ t.subtitle}}</h2>
 		<h1>{{ t.title }}</h1>

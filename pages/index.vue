@@ -34,7 +34,7 @@ definePageMeta({
 
 	.intro {
 		width: 100vw;
-		height: calc(100vh - 6rem);
+		height: 35rem;
 
 		position: relative;
 
