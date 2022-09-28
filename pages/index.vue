@@ -75,7 +75,6 @@ definePageMeta({
 
 		.text p {
 			font-size: 1.5rem;
-			line-height: 1.2rem;
 			margin-left: 1rem;
 		}
 
@@ -95,6 +94,7 @@ definePageMeta({
 
 		.text p {
 			font-size: 1rem;
+			line-height: 1.2rem;
 			margin-left: 0.5rem;
 		}
 
