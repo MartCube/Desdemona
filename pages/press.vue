@@ -1,6 +1,5 @@
 <template>
 	<div class="page">
-		<!-- <Intro title="press" subtitle="milestones" /> -->
 		<div class="grid">
 			<PressCard v-for="item in press" :data="item" />
 		</div>

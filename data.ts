@@ -121,19 +121,22 @@ export const estate: Array<estate_T> = [
 // Press
 export const press: Array<press_T> = [
 	{
+		poster: '/press/press1.webp',
 		video: 'https://www.youtube.com/embed/AvYDYcrbHj0',
 		title: 'TLC Four Houses',
+	},
+	{
+		poster: '/press/press2.webp',
+		video: 'https://www.youtube.com/embed/WJClHSWEj1I',
+		title: 'Miami Mondaen',
+	},
+	{
+		poster: '/press/press3.webp',
+		video: 'https://www.youtube.com/embed/gUaEbPCrGLM',
+		title: "Europe's Richest People",
 	},
 	{
 		video: 'https://www.youtube.com/embed/Fq0fSZ3QDe0',
 		title: 'Luxus und Laessigkeit in St. Tropez',
 	},
-	{
-		video: 'https://www.youtube.com/embed/WJClHSWEj1I',
-		title: 'Miami Mondaen',
-	},
-	{
-		video: 'https://www.youtube.com/embed/gUaEbPCrGLM',
-		title: "Europe's Richest People",
-	}
 ]

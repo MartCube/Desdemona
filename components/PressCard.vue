@@ -4,9 +4,9 @@
 			<div v-if="data.video" class="video">
 				<iframe width="100%" height="360" :src="data.video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
 			</div>
-			<div v-if="data.poster" class="poster">
+			<!-- <div v-if="data.poster" class="poster">
 				<img :src="data.poster" alt="">
-			</div>
+			</div> -->
 		</div>
 		<div class="info">
 			<p v-if="data.author" class="author">{{data.author}}</p>

@@ -1,6 +1,5 @@
 <template>
 	<div class="page">
-		<!-- <Intro title="private equity" subtitle="highlights" /> -->
 		<div class="grid">
 			<EquityCard v-for="item in equity" :data="item" />
 		</div>

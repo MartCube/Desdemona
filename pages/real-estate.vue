@@ -1,6 +1,5 @@
 <template>
 	<div class="page">
-		<!-- <Intro title="Real Estate" subtitle="Select Properties" /> -->
 		<div class="grid">
 			<EstateCard v-for="item in estate" :data="item" description />
 		</div>

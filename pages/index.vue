@@ -14,7 +14,7 @@
 		</div>
 		<EquitySection />
 		<EstateSection />
-		<!-- <PressSection /> -->
+		<PressSection />
 	</div>
 </template>
 
