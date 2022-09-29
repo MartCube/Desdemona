@@ -26,7 +26,7 @@ useHead({
 
 @media (max-width: $width) {
 	.grid {
-		padding: 5vw 5vw 0 5vw;
+		padding: 15vw 5vw 0 5vw;
 	}
 }
 

@@ -1,7 +1,9 @@
 <template>
 	<div class="equity_card">
 		<div class="image">
-			<img v-if="data.poster" v-lazy="data.poster">
+			<div class="gradient"></div>
+			<img class="poster" v-lazy="data.poster">
+			<img class="logo" v-lazy="data.logo">
 			<NuxtLink :to="data.link" target="_blank">
 				visit
 				<Icon name="arrow" />
@@ -33,12 +35,40 @@ defineProps<{
 		width: 50%;
 		height: 20rem;
 		position: relative;
+		overflow: hidden;
 		background: $light-grey;
 
 		display: flex;
 		justify-content: center;
 
-		img {
+		.gradient {
+			position: absolute;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(to top, rgba(105, 105, 105, 0.05), rgba(35, 111, 158, 0.95));
+		}
+
+		.poster {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+
+			&[lazy=loading] {
+				opacity: 0;
+			}
+
+			&[lazy=loaded] {
+				opacity: 1;
+				transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+			}
+		}
+
+		.logo {
+			z-index: 2;
 			width: 12rem;
 			height: 100%;
 			max-height: 10rem;
@@ -55,6 +85,7 @@ defineProps<{
 		}
 
 		a {
+			z-index: 3;
 			position: absolute;
 			bottom: 1rem;
 			right: 1rem;
@@ -117,6 +148,7 @@ defineProps<{
 	.equity_card {
 		flex-direction: column;
 		max-width: 20rem;
+		margin-bottom: 15vw;
 
 		.image {
 			width: 100%;

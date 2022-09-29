@@ -118,7 +118,7 @@ defineProps<{
 
 @media (max-width: $width) {
 	.member_card {
-		margin-bottom: 2rem;
+		margin-bottom: 15vw;
 
 		.image {
 			height: 15rem;

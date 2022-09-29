@@ -30,31 +30,34 @@ export const links: Array<link_T> = [
 // Private Equity
 export const equity: Array<equity_T> = [
 	{
-		poster: '/equity/villazzo.png',
+		poster: '/equity/villazzo.webp',
+		logo: '/equity/villazzo.png',
 		title: 'villazzo',
 		link: 'https://www.villazzo.com/',
 		description: 'Villazzo Investments is a partnership of elite investors that have taken advantage of the safe asset class of exclusive luxury residential real estate – the most lucrative way of investing money that Christian has attained over 15 years as an investor himself. Contact Christian if you are interested to learn more about this opportunity.',
 	},
 	{
-		poster: '/equity/the007.png',
+		poster: '/equity/the007.webp',
+		logo: '/equity/the007.png',
 		title: 'the 0.07%',
 		link: 'https://www.the007percent.com/login',
 		description: 'The 0.07% is a collective clique of jet set friends. We bring together the most beautiful people, the ultra-rich and the famous.Tap into our jet set circle and mingle with new friends. Get invited to billionaires’ villa parties and dinners, meet contacts at the highest echelon of society, wherever your travels take you. Join kindred spirits on luxurious trips and sip champagne on super yachts with attractive acquaintances.',
 	},
 	{
-		poster: '/equity/omp.png',
+		logo: '/equity/omp.png',
 		title: 'one model place',
 		link: 'https://www.onemodelplace.com/',
 		description: 'With a network of over 200,000 active members, One Model Place is the top market place for models, photographers, and creative talents in fashion to look for work. Add your online modeling portfolio to OMP so that prospective clients can view and make direct bookings. Modeling profiles are completely customizable, allowing you to add your Instagram feed for potential clients to view.',
 	},
 	{
-		poster: '/equity/top7.png',
+		poster: '/equity/top7.webp',
+		logo: '/equity/top7.png',
 		title: 'top7',
 		link: 'https://www.top7.guide/',
 		description: 'Tired of endless reviews, asking a friend when trying to look up favorite local bar, or restaurant? We were too! With Top7, we are looking to bring simplicity back. Only view the top 7 Restaurants, Bars & Clubs across most famous travel sites around the world. Build your search from google ratings, your friends ratings, and expert users. Your leaderboard based on how your network rated them. Create your lists and share it with friends.',
 	},
 	{
-		poster: '/equity/hookah.png',
+		logo: '/equity/hookah.png',
 		title: 'hookah',
 		link: '',
 		description: 'We are developing a “cartridge-based” shisha system for “healthy smoking”, i.e., instead of smoke, you’re inhaling purified air with added oxygen. Our system is healthy and doesn’t cause lung, mouth, throat, stomach, kidney, pancreas, liver, or colon cancer that traditional tobacco base cigarettes can.',

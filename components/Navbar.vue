@@ -172,13 +172,13 @@ header {
 
 		.links {
 			display: none;
+			z-index: 5;
 
 			&.show {
 				display: flex;
 			}
 
 			transform: initial;
-			// position: fixed;
 			top: 6rem;
 			padding: 0 5%;
 			width: 100%;

@@ -65,7 +65,6 @@ defineProps<{
 			width: 100%;
 			height: 100%;
 			background-image: linear-gradient(to bottom, rgba(105, 105, 105, 0.05), rgba(35, 111, 158, 0.95));
-			// background-image: linear-gradient(0deg,hsl(203deg 64% 38%) 0%,hsl(207deg 32% 41%) 39%,hsl(210deg 15% 42%) 61%,hsl(0deg 0% 41%) 100%);
 		}
 
 		.info {
@@ -97,7 +96,7 @@ defineProps<{
 
 @media (max-width: $width) {
 	.estate_card {
-		margin-bottom: 2rem;
+		margin-bottom: 15vw;
 
 		.image {
 			height: 15rem;

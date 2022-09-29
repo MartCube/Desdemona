@@ -14,12 +14,6 @@ body {
 	color: $text;
 }
 
-#app {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
 .page {
 	width: 100%;
 	min-height: 100vh;
@@ -100,9 +94,7 @@ body {
 	.equity_section,
 	.estate_section,
 	.press_section {
-
 		padding: 5rem 5%;
-
 	}
 }
 

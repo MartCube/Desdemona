@@ -5,7 +5,7 @@
 			<h2 class="title">private equity</h2>
 			<div class="grid">
 				<nuxt-link v-for="item in data" :key="item.title" :to="item.link" target="_blank">
-					<img v-lazy="item.poster" />
+					<img v-lazy="item.logo" />
 				</nuxt-link>
 			</div>
 			<NuxtLink class="link" to='/private-equity'>learn more</NuxtLink>
