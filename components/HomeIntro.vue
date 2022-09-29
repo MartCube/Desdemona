@@ -16,7 +16,7 @@
 .home_intro {
 	width: 100vw;
 	height: 100%;
-	max-height: 35rem;
+	max-height: 30rem;
 	position: relative;
 
 	.text {
@@ -27,17 +27,17 @@
 
 		p {
 			color: $white;
-			font-size: 2.5rem;
+			font-size: 2rem;
 			font-weight: bold;
 			text-transform: uppercase;
-			margin-left: 2rem;
+			margin-left: 1.5rem;
 
 			&:first-of-type {
 				margin: 0;
 			}
 
 			&:last-of-type {
-				margin-top: 2rem;
+				margin-top: 1.5rem;
 				font-size: 1rem;
 				font-weight: normal;
 			}
