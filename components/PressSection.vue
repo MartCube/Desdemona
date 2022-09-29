@@ -198,7 +198,16 @@ const data = press.slice(0, 2);
 					margin-top: 1rem;
 
 					h2 {
-						font-size: 1.5rem;
+						font-size: 1.2rem;
+					}
+
+					p {
+						font-size: 0.7rem;
+
+						.icon {
+							width: 0.7rem;
+
+						}
 					}
 				}
 			}

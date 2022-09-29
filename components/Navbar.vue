@@ -214,6 +214,10 @@ header {
 				&.bars {
 					fill: $primary;
 				}
+
+				&.xmark {
+					fill: $text;
+				}
 			}
 
 		}

@@ -1,0 +1,98 @@
+<template>
+	<div class="home_intro">
+		<div class="text">
+			<p>" do not hire a man</p>
+			<p>who does your</p>
+			<p>work for money,</p>
+			<p>but him who does it</p>
+			<p>for love of it "</p>
+			<p>Henry David Thoreau</p>
+		</div>
+		<img src="/intro.webp" />
+	</div>
+</template>
+
+<style lang="scss" scoped>
+.home_intro {
+	width: 100vw;
+	height: 100%;
+	max-height: 35rem;
+	position: relative;
+
+	.text {
+		position: absolute;
+		top: 50%;
+		left: 35%;
+		transform: translate(-50%, -50%);
+
+		p {
+			color: $white;
+			font-size: 2.5rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-left: 2rem;
+
+			&:first-of-type {
+				margin: 0;
+			}
+
+			&:last-of-type {
+				margin-top: 2rem;
+				font-size: 1rem;
+				font-weight: normal;
+			}
+		}
+	}
+
+	img {
+		width: 100vw;
+		height: 100%;
+		object-fit: cover;
+		object-position: top;
+	}
+}
+
+@media (max-width: 60rem) {
+	.home_intro {
+		width: 100vw;
+
+		.text p {
+			font-size: 1.5rem;
+			margin-left: 1rem;
+		}
+
+		img {
+			width: 100vw;
+			height: 100%;
+			object-fit: cover;
+			object-position: top;
+		}
+	}
+}
+
+@media (max-width: 35rem) {
+	.home_intro {
+		width: 100vw;
+		height: 100%;
+
+		.text p {
+			font-size: 1rem;
+			line-height: 1.2rem;
+			margin-left: 0.5rem;
+
+			&:last-of-type {
+				margin-top: 1rem;
+				font-size: 0.7rem;
+				font-weight: normal;
+			}
+		}
+
+		img {
+			width: 100vw;
+			height: 100%;
+			object-fit: contain;
+			object-position: top;
+		}
+	}
+}
+</style>

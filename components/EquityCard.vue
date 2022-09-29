@@ -3,7 +3,7 @@
 		<div class="image">
 			<img v-if="data.poster" v-lazy="data.poster">
 			<NuxtLink :to="data.link" target="_blank">
-				learn more
+				visit
 				<Icon name="arrow" />
 			</NuxtLink>
 		</div>
