@@ -112,6 +112,18 @@ defineProps<{
 	.estate_card {
 		width: 100%;
 		max-width: 15rem;
+
+		.image {
+			.info {
+				h2 {
+					font-size: 1.2rem;
+				}
+
+				h3 {
+					font-size: 0.7rem;
+				}
+			}
+		}
 	}
 }
 </style>
