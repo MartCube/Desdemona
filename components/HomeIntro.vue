@@ -8,9 +8,13 @@
 			<p>for love of it "</p>
 			<p>Henry David Thoreau</p>
 		</div>
-		<img src="/intro.webp" />
+		<img v-lazy="img">
 	</div>
 </template>
+
+<script setup lang="ts">
+const img = '/intro.webp'
+</script>
 
 <style lang="scss" scoped>
 .home_intro {
@@ -18,8 +22,10 @@
 	height: 100%;
 	max-height: 30rem;
 	position: relative;
+	overflow: hidden;
 
 	.text {
+		z-index: 2;
 		position: absolute;
 		top: 50%;
 		left: 35%;
@@ -49,6 +55,15 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: top;
+
+		&[lazy=loading] {
+			opacity: 0;
+		}
+
+		&[lazy=loaded] {
+			opacity: 1;
+			transition: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
+		}
 	}
 }
 
