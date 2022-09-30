@@ -67,9 +67,9 @@ const img = '/intro.webp'
 	}
 }
 
-@media (max-width: 60rem) {
+@media (max-width: $width) {
 	.home_intro {
-		max-height: 25rem;
+		max-height: 20rem;
 
 		.text p {
 			font-size: 1.5rem;
