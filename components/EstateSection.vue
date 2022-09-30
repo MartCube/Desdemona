@@ -4,9 +4,7 @@
 			<h3 class="subtitle">select properties</h3>
 			<h2 class="title">real estate</h2>
 			<div class="grid">
-				<!-- <nuxt-link to="/real-estate" v-for="item in data"> -->
 				<EstateCard v-for="item in data" :data="item" />
-				<!-- </nuxt-link> -->
 			</div>
 			<NuxtLink class="link" to='/real-estate'>learn more</NuxtLink>
 		</div>

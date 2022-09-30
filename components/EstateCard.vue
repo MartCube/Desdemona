@@ -1,6 +1,6 @@
 <template>
 	<div class="estate_card">
-		<NuxtLink class="image" :to="data.link" target="_blank">
+		<NuxtLink class="image" :to="link ? data.link : '/real-estate'" :target="link ? '_blank' : '_self'">
 			<div class="gradient"></div>
 			<img v-if="data.poster" v-lazy="data.poster">
 			<div class="info">
@@ -17,6 +17,7 @@ import type { estate_T } from "~/types";
 defineProps<{
 	data: estate_T;
 	description?: true,
+	link?: true,
 }>();
 </script>
 

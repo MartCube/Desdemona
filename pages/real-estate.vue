@@ -1,7 +1,7 @@
 <template>
 	<div class="page">
 		<div class="grid">
-			<EstateCard v-for="item in estate" :data="item" description />
+			<EstateCard v-for="item in estate" :data="item" description link />
 		</div>
 	</div>
 </template>

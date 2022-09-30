@@ -28,8 +28,8 @@ const img = '/intro.webp'
 		z-index: 2;
 		position: absolute;
 		top: 50%;
-		left: 35%;
-		transform: translate(-50%, -50%);
+		left: calc(50% - 30rem);
+		transform: translate(0, -50%);
 
 		p {
 			color: $white;
