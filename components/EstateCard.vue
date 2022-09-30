@@ -68,7 +68,7 @@ defineProps<{
 		}
 
 		.info {
-			z-index: 2;
+			z-index: 3;
 
 			h2 {
 				text-transform: capitalize;
