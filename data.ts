@@ -59,7 +59,6 @@ export const equity: Array<equity_T> = [
 	{
 		logo: '/equity/hookah.png',
 		title: 'hookah',
-		link: '',
 		description: 'We are developing a “cartridge-based” shisha system for “healthy smoking”, i.e., instead of smoke, you’re inhaling purified air with added oxygen. Our system is healthy and doesn’t cause lung, mouth, throat, stomach, kidney, pancreas, liver, or colon cancer that traditional tobacco base cigarettes can.',
 	},
 ]

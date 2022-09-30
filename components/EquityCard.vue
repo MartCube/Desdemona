@@ -4,7 +4,7 @@
 			<div class="gradient"></div>
 			<img class="poster" v-lazy="data.poster">
 			<img class="logo" v-lazy="data.logo">
-			<NuxtLink :to="data.link" target="_blank">
+			<NuxtLink v-if="data.link" :to="data.link" target="_blank">
 				visit
 				<Icon name="arrow" />
 			</NuxtLink>

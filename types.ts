@@ -6,7 +6,7 @@ export interface link_T {
 // Private Equity
 export interface equity_T {
 	title: string,
-	link: string,
+	link?: string,
 	description: string,
 	logo: string,
 	poster?: string,
