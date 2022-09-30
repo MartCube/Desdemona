@@ -71,9 +71,13 @@ const img = '/intro.webp'
 	.home_intro {
 		max-height: 20rem;
 
-		.text p {
-			font-size: 1.5rem;
-			margin-left: 1rem;
+		.text {
+			left: 5%;
+
+			p {
+				font-size: 1.5rem;
+				margin-left: 1rem;
+			}
 		}
 
 		img {
