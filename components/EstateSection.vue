@@ -54,6 +54,11 @@ const data = estate.slice(0, 3);
 		.estate_card {
 			width: 40vw;
 			height: 40vw;
+			overflow: hidden;
+
+			.image {
+				height: 100%;
+			}
 		}
 	}
 }
