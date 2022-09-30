@@ -25,7 +25,7 @@ useHead({
 
 @media (max-width: 70rem) {
 	.grid {
-		padding: 5vw;
+		padding: 15vw 5vw 0 5vw;
 		max-width: initial;
 		flex-direction: column;
 		align-items: center;

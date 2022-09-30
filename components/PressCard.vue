@@ -81,7 +81,7 @@ defineProps<{
 
 @media (max-width: 45rem) {
 	.press_card {
-		margin-bottom: 2rem;
+		margin-bottom: 15vw;
 
 		.media {
 			height: 18rem;

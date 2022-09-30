@@ -180,7 +180,7 @@ header {
 
 			transform: initial;
 			top: 6rem;
-			padding: 0 5%;
+			padding: 5%;
 			width: 100%;
 			height: fit-content;
 			left: 0;
@@ -193,7 +193,7 @@ header {
 			.link {
 				width: max-content;
 				height: 2rem;
-				margin: 1rem 0;
+				padding: 2rem 0;
 
 				&::before {
 					display: none;
