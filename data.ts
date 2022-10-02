@@ -44,6 +44,7 @@ export const equity: Array<equity_T> = [
 		description: 'The 0.07% is a collective clique of jet set friends. We bring together the most beautiful people, the ultra-rich and the famous.Tap into our jet set circle and mingle with new friends. Get invited to billionaires’ villa parties and dinners, meet contacts at the highest echelon of society, wherever your travels take you. Join kindred spirits on luxurious trips and sip champagne on super yachts with attractive acquaintances.',
 	},
 	{
+		poster: '/equity/omp.webp',
 		logo: '/equity/omp.png',
 		title: 'one model place',
 		link: 'https://www.onemodelplace.com/',
