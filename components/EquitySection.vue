@@ -31,8 +31,8 @@ const data = equity.slice(0, 3);
 			align-items: center;
 
 			a {
-				width: 25%;
-				height: 100%;
+				width: 30%;
+				height: 4rem;
 
 				img {
 					width: 100%;

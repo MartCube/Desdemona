@@ -40,7 +40,6 @@ const { handleSubmit, isSubmitting } = useForm<ContactForm>({
 })
 
 const onSubmit = handleSubmit(async (values, actions) => {
-
 	emailjs.sendForm('service_f8wwkf9', 'template_36b5j8o', form.value, 'YVzaQIyzcpywjD7jW').then((result) => { console.log('SUCCESS!', result.text) }, (error) => { console.log('FAILED...', error.text) },)
 	// show msg
 	msg.value = true
@@ -163,6 +162,11 @@ form {
 		.submit {
 			width: 50%;
 			height: 3rem;
+		}
+
+		.msg p {
+			width: 15rem;
+			margin: 1rem 0;
 		}
 	}
 }
