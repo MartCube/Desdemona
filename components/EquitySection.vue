@@ -15,8 +15,7 @@
 
 <script setup lang="ts">
 import { equity } from "~/data"
-const data = equity.slice(0, 3);
-
+const data = equity.slice(0, 4);
 </script>
 
 <style lang="scss" scoped>
@@ -31,13 +30,12 @@ const data = equity.slice(0, 3);
 			align-items: center;
 
 			a {
-				width: 30%;
+				width: 20%;
 				height: 4rem;
 
 				img {
 					width: 100%;
 					height: 100%;
-					max-height: 10rem;
 					object-fit: contain;
 
 					&[lazy=loading] {
@@ -55,8 +53,6 @@ const data = equity.slice(0, 3);
 	}
 }
 
-
-
 @media (max-width: 45rem) {
 	.equity_section {
 		.wrap {
@@ -65,7 +61,10 @@ const data = equity.slice(0, 3);
 
 				a {
 					width: 40%;
-					height: 5rem;
+
+					&:nth-child(-n+2) {
+						margin-bottom: 2rem;
+					}
 				}
 			}
 		}
