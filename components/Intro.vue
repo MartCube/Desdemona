@@ -44,7 +44,7 @@ const t = computed(() =>
 <style lang="scss" scoped>
 .intro {
 	width: 100%;
-	height: 20rem;
+	height: 25rem;
 	background-image: linear-gradient(90deg, hsl(203deg 64% 38%) 0%, hsl(205deg 52% 40%) 19%, hsl(206deg 43% 41%) 28%, hsl(207deg 36% 41%) 35%, hsl(208deg 31% 42%) 41%, hsl(208deg 25% 42%) 47%, hsl(209deg 21% 42%) 53%, hsl(210deg 16% 42%) 59%, hsl(210deg 12% 42%) 65%, hsl(211deg 8% 42%) 72%, hsl(211deg 4% 41%) 81%, hsl(0deg 0% 41%) 100%);
 	color: $white;
 	margin-bottom: 5rem;
@@ -124,6 +124,8 @@ const t = computed(() =>
 
 @media (max-width: 45rem) {
 	.intro {
+		height: 25vh;
+
 		h1 {
 			font-size: 1.5rem;
 		}
