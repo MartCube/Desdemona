@@ -11,10 +11,14 @@
 				<p>There are a countless number of businesses and entrepreneurs in the world today, but few can claim to have successfully launched as many groundbreaking business concepts as Christian Jagodzinski. A true child prodigy, Christian’s
 					early passion for computer technology in the 1980s led he and his first business partner Michael J.G. Gleissner to start what would become Telebook, Germany’s first and largest fully automated online book retailer.</p>
 			</div>
-			<div class="image"></div>
+			<div class="image">
+				<img src="/ceo/ceo1.webp">
+			</div>
 		</div>
 		<div class="wrap reverse">
-			<div class="image"></div>
+			<div class="image">
+				<img src="/ceo/ceo2.webp">
+			</div>
 			<div class="text">
 				<p>While the Internet gold rush is typically recognized as beginning in 1995, the beginnings of Christian and Michael’s company date back as early of 1985. For this reason, when the mainstream popularity of the Internet finally broke
 					in the mid 90s, Telebook was already way ahead of the industry curve for e-commerce, leading Amazon to take notice. In early 1998, Amazon made an offer to buy out Telebook, and in April of 1998, Amazon.com acquired Telebook in a
@@ -45,7 +49,6 @@ useHead({
 .page {
 	width: 100%;
 
-	// margin-top: 10rem;
 	.wrap {
 		width: 100%;
 		max-width: $width;
@@ -124,6 +127,13 @@ useHead({
 		.image {
 			width: 48%;
 			background: $light-grey;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
 		}
 
 		.video {
@@ -137,6 +147,11 @@ useHead({
 			margin-bottom: 2rem;
 		}
 
+		&:nth-child(2) {
+			.image {
+				height: 26rem;
+			}
+		}
 
 		&:last-of-type {
 			flex-direction: column;
@@ -151,7 +166,6 @@ useHead({
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-
 
 		.wrap {
 			margin: 0;
@@ -210,6 +224,12 @@ useHead({
 			p {
 				font-size: 0.9rem;
 			}
+
+			&:nth-child(1) {
+				.image img {
+					object-position: top;
+				}
+			}
 		}
 	}
 }
@@ -225,6 +245,8 @@ useHead({
 			.video {
 				height: 15rem;
 			}
+
+
 		}
 	}
 }

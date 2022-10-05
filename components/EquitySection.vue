@@ -4,7 +4,7 @@
 			<h3 class="subtitle">highlights</h3>
 			<h2 class="title">private equity</h2>
 			<div class="grid">
-				<nuxt-link v-for="item in data" :key="item.title" to="/private-equity" target="_blank">
+				<nuxt-link v-for="item in data" :key="item.title" to="/private-equity">
 					<img v-lazy="item.logo" />
 				</nuxt-link>
 			</div>

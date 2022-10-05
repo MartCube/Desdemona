@@ -5,7 +5,7 @@
 			<h2 class="title">press</h2>
 			<div class="grid">
 				<div class="cards">
-					<NuxtLink v-for="item in data" :to="item.video" class="press_card" target="_blank">
+					<NuxtLink v-for="item in data" to="/press" class="press_card">
 						<div class="image">
 							<img v-lazy="item.poster">
 						</div>
@@ -18,7 +18,7 @@
 						</div>
 					</NuxtLink>
 				</div>
-				<NuxtLink class="main_card" :to="press[2].video" target="_blank">
+				<NuxtLink class="main_card" to="/press" target="_blank">
 					<div class="gradient"></div>
 					<img v-lazy="press[2].poster">
 					<div class="info">
