@@ -86,7 +86,7 @@ export const team: Array<member_T> = [
 	{
 		image: '/members/arpadd.webp',
 		name: 'Arpad Dobos',
-		position: 'Project Manager',
+		position: 'Director of IT Investments',
 		description: 'Arpad Dobos, J.D. is a highly organized Project Manager with over 20 years of experience setting goals, timeline progress points, and operations scale and management strategies. Proven leader who defines and supervises team member roles and expectations while balancing conflicting priorities across multiple assignments. Excellent executive communication multilingual skills. Expertise in information technology, data analytics, and data privacy in both large organizations and startups. Arpad studied law at the University of Miskolc, the most prestigious law school in Hungary. He also co-founded a first-of-its kind sports analytics company in the U.S. that offered professional sports teams video tracking technology and insights to improve player performance.',
 	},
 ]
