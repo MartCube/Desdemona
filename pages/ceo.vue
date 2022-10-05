@@ -12,12 +12,12 @@
 					early passion for computer technology in the 1980s led he and his first business partner Michael J.G. Gleissner to start what would become Telebook, Germany’s first and largest fully automated online book retailer.</p>
 			</div>
 			<div class="image">
-				<img src="/ceo/ceo1.webp">
+				<img v-lazy="'/ceo/ceo1.webp'">
 			</div>
 		</div>
 		<div class="wrap reverse">
 			<div class="image">
-				<img src="/ceo/ceo2.webp">
+				<img v-lazy="'/ceo/ceo2.webp'">
 			</div>
 			<div class="text">
 				<p>While the Internet gold rush is typically recognized as beginning in 1995, the beginnings of Christian and Michael’s company date back as early of 1985. For this reason, when the mainstream popularity of the Internet finally broke
@@ -133,6 +133,15 @@ useHead({
 				height: 100%;
 				object-fit: cover;
 				object-position: center;
+
+				&[lazy=loading] {
+					opacity: 0;
+				}
+
+				&[lazy=loaded] {
+					opacity: 1;
+					transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+				}
 			}
 		}
 

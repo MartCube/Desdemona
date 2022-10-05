@@ -8,13 +8,9 @@
 			<p>for love of it."</p>
 			<p>Henry David Thoreau</p>
 		</div>
-		<img v-lazy="img">
+		<img v-lazy="'/intro.webp'">
 	</div>
 </template>
-
-<script setup lang="ts">
-const img = '/intro.webp'
-</script>
 
 <style lang="scss" scoped>
 .home_intro {
