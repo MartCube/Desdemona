@@ -30,7 +30,7 @@ export interface estate_T {
 export interface ContactForm {
 	name: string;
 	email: string;
-	phone: number;
+	number: number;
 	message: string;
 }
 // Press

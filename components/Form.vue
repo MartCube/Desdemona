@@ -1,12 +1,11 @@
 <template>
 	<form ref="form" @submit="onSubmit" autocomplete="off">
-		<VeeInput name="name" />
-		<VeeInput name="email" />
-		<VeeInput name="phone" />
-		<VeeInput name="message" textarea />
+		<VeeInput name="name" type="text" />
+		<VeeInput name="email" type="text" />
+		<VeeInput name="number" type="number" :placeholder="`${numberA} + ${numberB} = ?`" />
+		<VeeInput name="message" type="textarea" />
 
-		<button class="submit" type="submit" :disabled="isSubmitting">
-			send message
+		<button class="submit" type="submit" :disabled="isSubmitting">send message
 			<Icon name="arrow" />
 		</button>
 		<div v-if="msg" class="msg">
@@ -24,13 +23,18 @@ import { toFormValidator } from '@vee-validate/zod';
 import { z } from 'zod';
 import emailjs from '@emailjs/browser';
 
+const numberA = ref(Math.floor(Math.random() * 10) + 1)
+const numberB = ref(Math.floor(Math.random() * 10) + 1)
+const result = ref(numberA.value + numberB.value)
+
+
 const form = ref()
 const msg = ref(false)
 const validationSchema = toFormValidator(
 	z.object({
 		name: z.string().min(1, 'Required'),
 		email: z.string().min(1, 'Required').email(),
-		phone: z.string().min(1, 'Required'),
+		number: z.number(),
 		message: z.string().min(1, 'Required').max(120),
 	})
 )
@@ -40,10 +44,15 @@ const { handleSubmit, isSubmitting } = useForm<ContactForm>({
 })
 
 const onSubmit = handleSubmit(async (values, actions) => {
-	emailjs.sendForm('service_f8wwkf9', 'template_36b5j8o', form.value, 'YVzaQIyzcpywjD7jW').then((result) => { console.log('SUCCESS!', result.text) }, (error) => { console.log('FAILED...', error.text) },)
-	// show msg
+
+	// send email if number validation true
+	if (values.number === result.value) emailjs.sendForm('service_f8wwkf9', 'template_36b5j8o', form.value, 'YVzaQIyzcpywjD7jW').then((result) => { console.log('SUCCESS!', result.text) }, (error) => { console.log('FAILED...', error.text) },)
+
 	msg.value = true
 	actions.resetForm()
+	numberA.value = Math.floor(Math.random() * 10) + 1
+	numberB.value = Math.floor(Math.random() * 10) + 1
+	result.value = numberA.value + numberB.value
 })
 </script>
 

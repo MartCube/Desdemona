@@ -180,11 +180,10 @@ header {
 
 			transform: initial;
 			top: 6rem;
-			padding: 5%;
+			padding: 2rem 5%;
 			width: 100%;
 			height: fit-content;
 			left: 0;
-			box-shadow: none;
 
 			align-items: flex-start;
 			flex-direction: column;

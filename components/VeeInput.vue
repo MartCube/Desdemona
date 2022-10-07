@@ -1,12 +1,15 @@
 <template>
-	<div class="field" :class="{ textarea: textarea }">
-		<template v-if="!textarea">
+	<div class="field" :class="type">
+		<template v-if="type === 'text'">
 			<input v-model="value" type="text" :id="name" :name="name" :placeholder="name" />
 		</template>
-		<template v-else>
+		<template v-if="type === 'textarea'">
 			<textarea v-model="value" :id="name" :name="name" :placeholder="name" rows="10" />
 		</template>
-		<span class="error" v-show="errorMessage"> {{errorMessage}} </span>
+		<template v-if="type === 'number'">
+			<input v-model="value" type="number" id="name" name="name" :placeholder="placeholder" />
+		</template>
+		<span class="error"> {{errorMessage}} </span>
 	</div>
 </template>
   
@@ -16,12 +19,12 @@ import { toRef } from 'vue'
 
 const props = defineProps<{
 	name: string
-	textarea?: boolean
+	type?: string
+	placeholder?: string
 }>()
 
 const nameRef = toRef(props, 'name')
 const { errorMessage, value } = useField<string>(nameRef)
-
 </script>
 
 <style lang="scss">
@@ -42,6 +45,7 @@ const { errorMessage, value } = useField<string>(nameRef)
 		background: #f3f3f6;
 		font-size: 1rem;
 		font-weight: normal;
+		appearance: textfield;
 
 		&::placeholder {
 			text-transform: capitalize;

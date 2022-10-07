@@ -1,14 +1,19 @@
 <template>
 	<div class="estate_card">
-		<NuxtLink class="image" :to="link ? data.link : '/real-estate'" :target="link ? '_blank' : '_self'">
+		<!-- :to="link ? data.link : '/real-estate'" :target="link ? '_blank' : '_self'" -->
+		<div class="image">
 			<div class="gradient"></div>
 			<img v-if="data.poster" v-lazy="data.poster">
 			<div class="info">
 				<h2>{{data.title}}</h2>
 				<h3>{{data.subtitle}}</h3>
 			</div>
-		</NuxtLink>
+		</div>
 		<p v-if="description">{{data.description}}</p>
+		<NuxtLink vi v-if="link" :to="data.link" target="_blank">
+			visit
+			<Icon name="arrow" />
+		</NuxtLink>
 	</div>
 </template>
 
@@ -92,6 +97,30 @@ defineProps<{
 	p {
 		margin-top: 2rem;
 		line-height: 1.5rem;
+	}
+
+	a {
+		margin-top: 1rem;
+		width: fit-content;
+
+		background: $primary;
+		padding: 0.8rem 1.2rem;
+
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $white;
+		font-size: 0.8rem;
+		font-weight: bold;
+
+		display: flex;
+		align-items: center;
+
+		.icon {
+			fill: $white;
+			width: 0.8rem;
+			height: 0.8rem;
+			margin-left: 0.8rem;
+		}
 	}
 }
 
