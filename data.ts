@@ -146,7 +146,7 @@ export const pressVideos: Array<video_T> = [
 // Press Articles
 export const pressArticles: Array<article_T> = [
 	{
-		poster: '/press/private-islands.webp',
+		poster: '/press/islands.webp',
 		title: 'Private Islands',
 		link: 'katafanga island',
 		description: 'After well over a decade of development, Katafanga Island – one of the most distinctive islands in Fiji, perhaps the world – is finally on the verge of welcoming its very first guests.',

@@ -7,7 +7,7 @@
 
 		<template v-if="!showText">
 			<button @click="showText = true">
-				learn more
+				read article
 				<Icon name="arrow" />
 			</button>
 		</template>
@@ -42,8 +42,8 @@ defineProps<{
 	flex-direction: column;
 
 	img {
-		width: 15rem;
-		height: 18.5rem;
+		width: 25rem;
+		height: 32rem;
 		align-self: center;
 		margin-bottom: 2rem;
 		box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
