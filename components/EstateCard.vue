@@ -10,7 +10,7 @@
 			</div>
 		</div>
 		<p v-if="description">{{data.description}}</p>
-		<NuxtLink vi v-if="link" :to="data.link" target="_blank">
+		<NuxtLink :to="data.link" target="_blank">
 			visit
 			<Icon name="arrow" />
 		</NuxtLink>

@@ -4,6 +4,10 @@
 		<h2>{{data.title}}</h2>
 		<span>{{data.link}}</span>
 		<p>{{data.description}}</p>
+		<NuxtLink :to="data.link" target="_blank">
+			learn more
+			<Icon name="arrow" />
+		</NuxtLink>
 	</div>
 </template>
 
@@ -17,7 +21,7 @@ defineProps<{
 <style lang="scss" scoped>
 .article_card {
 	width: 45rem;
-	padding: 5rem;
+	padding: 2.5rem;
 	margin-bottom: 5rem;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 	background-color: $white;
@@ -50,6 +54,30 @@ defineProps<{
 
 	p {
 		color: $text;
+	}
+
+	a {
+		margin-top: 2rem;
+		width: fit-content;
+
+		background: $primary;
+		padding: 0.8rem 1.2rem;
+
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $white;
+		font-size: 0.8rem;
+		font-weight: bold;
+
+		display: flex;
+		align-items: center;
+
+		.icon {
+			fill: $white;
+			width: 0.8rem;
+			height: 0.8rem;
+			margin-left: 0.8rem;
+		}
 	}
 }
 
