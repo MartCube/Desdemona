@@ -1,6 +1,5 @@
 <template>
 	<div class="estate_card">
-		<!-- :to="link ? data.link : '/real-estate'" :target="link ? '_blank' : '_self'" -->
 		<div class="image">
 			<div class="gradient"></div>
 			<img v-if="data.poster" v-lazy="data.poster">
@@ -10,9 +9,8 @@
 			</div>
 		</div>
 		<p v-if="description">{{data.description}}</p>
-		<NuxtLink v-if="link" :to="data.link" target="_blank">
-			visit
-			<Icon name="arrow" />
+		<NuxtLink v-if="data.link" :to="data.link" target="_blank">
+			visit katafangaisland.com
 		</NuxtLink>
 	</div>
 </template>

@@ -6,6 +6,7 @@
 			<img class="logo" v-lazy="data.logo">
 			<NuxtLink v-if="data.link" :to="data.link" target="_blank">
 				visit
+				{{ link }}
 				<Icon name="arrow" />
 			</NuxtLink>
 		</div>
@@ -18,9 +19,18 @@
 
 <script setup lang="ts">
 import type { equity_T } from "~/types";
-defineProps<{
+
+const props = defineProps<{
 	data: equity_T;
 }>();
+
+
+const link = computed(() =>
+	props.data.link.replaceAll('https://www.', '').replaceAll('/', '')
+)
+
+// link.replaceAll('https://www.', '')
+
 </script>
 
 <style lang="scss" scoped>
