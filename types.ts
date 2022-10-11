@@ -45,4 +45,5 @@ export interface article_T {
 	poster: string,
 	link?: string,
 	description?: string,
+	text?: string[]
 }

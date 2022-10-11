@@ -4,15 +4,27 @@
 		<h2>{{data.title}}</h2>
 		<span>{{data.link}}</span>
 		<p>{{data.description}}</p>
-		<NuxtLink :to="data.link" target="_blank">
-			learn more
-			<Icon name="arrow" />
-		</NuxtLink>
+
+		<template v-if="!showText">
+			<button @click="showText = true">
+				learn more
+				<Icon name="arrow" />
+			</button>
+		</template>
+		<template v-else>
+			<div class="text">
+				<p v-for="item in data.text">
+					{{ item }}
+				</p>
+			</div>
+		</template>
 	</div>
 </template>
 
 <script setup lang="ts">
 import type { article_T } from "~/types";
+
+const showText = ref(false)
 defineProps<{
 	data: article_T;
 }>();
@@ -63,14 +75,16 @@ defineProps<{
 
 	p {
 		color: $text;
+		margin-bottom: 1rem;
 	}
 
-	a {
-		margin-top: 2rem;
+	button {
 		width: fit-content;
-
-		background: $primary;
+		margin-top: 1rem;
 		padding: 0.8rem 1.2rem;
+		border: none;
+		cursor: pointer;
+		background: $primary;
 
 		text-transform: uppercase;
 		text-decoration: none;
