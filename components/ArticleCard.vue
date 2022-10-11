@@ -35,6 +35,15 @@ defineProps<{
 		align-self: center;
 		margin-bottom: 2rem;
 		box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+		&[lazy=loading] {
+			opacity: 0;
+		}
+
+		&[lazy=loaded] {
+			opacity: 1;
+			transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+		}
 	}
 
 	h2 {
