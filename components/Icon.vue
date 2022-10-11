@@ -12,13 +12,14 @@ defineProps<{
 	name: string
 }>();
 
-function getPath(value:string) {
+
+function getPath(value: string) {
 	return icons[value]
 }
 </script>
 
 <style lang="scss" scoped>
-.icon{
+.icon {
 	width: 24px;
 	height: 24px;
 }

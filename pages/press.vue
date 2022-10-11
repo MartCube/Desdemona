@@ -1,13 +1,18 @@
 <template>
 	<div class="page">
 		<div class="grid">
-			<PressCard v-for="item in press" :data="item" />
+			<VideoCard v-for="item in pressVideos" :data="item" />
+		</div>
+		<div class="grid grey">
+			<ArticleCard v-for="item in pressArticles" :data="item" />
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
-import { press } from "~/data"
+import { pressVideos } from "~/data"
+import { pressArticles } from "~/data"
+
 useHead({
 	title: 'Press',
 })
@@ -16,11 +21,16 @@ useHead({
 <style lang="scss" scoped>
 .grid {
 	width: 100%;
-	max-width: 70rem;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+
+	&.grey {
+		padding-top: 5rem;
+		background-color: $grey;
+	}
 }
 
 @media (max-width: 70rem) {
@@ -30,6 +40,11 @@ useHead({
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+
+		&.grey {
+			padding-top: 15vw;
+			background-color: $grey;
+		}
 	}
 }
 </style>

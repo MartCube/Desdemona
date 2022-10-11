@@ -20,9 +20,9 @@
 				</div>
 				<NuxtLink class="main_card" to="/press" target="_blank">
 					<div class="gradient"></div>
-					<img v-lazy="press[2].poster">
+					<img v-lazy="pressVideos[2].poster">
 					<div class="info">
-						<h2> {{ press[2].title }} </h2>
+						<h2> {{ pressVideos[2].title }} </h2>
 						<p>
 							watch now
 							<Icon name="arrow" />
@@ -36,9 +36,9 @@
 </template>
 
 <script setup lang="ts">
-import { press } from "~/data"
+import { pressVideos } from "~/data"
 
-const data = press.slice(0, 2);
+const data = pressVideos.slice(0, 2);
 </script>
 
 <style lang="scss" scoped>

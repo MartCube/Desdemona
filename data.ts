@@ -1,4 +1,4 @@
-import type { press_T, equity_T, link_T, estate_T, member_T } from "~/types"
+import type { link_T, equity_T, estate_T, member_T, article_T, video_T } from "~/types"
 
 // Navbar Links
 export const links: Array<link_T> = [
@@ -121,8 +121,8 @@ export const estate: Array<estate_T> = [
 		description: 'The Murano Grande at Portofino is an exceptional condo tower in the prestigious South of Fifth neighborhood of South Beach. Desdemona owns a combined, completely renovated front-to-back 5-bedroom unit of approx. 4000 sqft. Its close proximity to both prime beaches and world-class shopping and nightlife make it very easy to call home',
 	},
 ]
-// Press
-export const press: Array<press_T> = [
+// Press Video
+export const pressVideos: Array<video_T> = [
 	{
 		poster: '/press/press1.webp',
 		video: 'https://www.youtube.com/embed/AvYDYcrbHj0',
@@ -141,5 +141,26 @@ export const press: Array<press_T> = [
 	{
 		video: 'https://www.youtube.com/embed/Fq0fSZ3QDe0',
 		title: 'Luxus und Laessigkeit in St. Tropez',
+	},
+]
+// Press Articles
+export const pressArticles: Array<article_T> = [
+	{
+		poster: '/press/private-islands.webp',
+		title: 'Private Islands',
+		link: 'katafanga island',
+		description: 'After well over a decade of development, Katafanga Island – one of the most distinctive islands in Fiji, perhaps the world – is finally on the verge of welcoming its very first guests.'
+	},
+	{
+		poster: '/press/prestige.webp',
+		title: 'prestige',
+		link: 'Vom Computer-Freak zum Millionär	',
+		description: 'Während damals seine 13- und 14jährigen Altersgenossen gegen pubertäre Schübe und lästige Pflichten ankämpften, hat Christian Jagodzinski seine Leidenschaft für Computer entdeckt, diese ausgelebt, den ersten Online-Bookshop mit einer Datenbank von einer Million Buchtiteln erschaffen, mit Amazon ein lukratives Geschäft mitsamt dickem Aktienpaket unter Dach und Fach gebracht und wurde Millionär. Mit 16 Jahren erhielt er die Lizenz, seine eigene Firma zu gründen und war Deutschlands jüngster Firmeninhaber.'
+	},
+	{
+		poster: '/press/florida.webp',
+		title: 'florida international magazine',
+		link: 'Christian Jagodzinski – Founder & President, Villazzo, Miami Beach',
+		description: 'Entrepreneur and thrill–seeker Christian Jagodzinski has traveled to more than 25 countries in ultimate style, has practiced just about every sport known to a man and even flew a Russian fighter jet on a whim.'
 	},
 ]

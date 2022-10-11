@@ -4,67 +4,50 @@
 			<div v-if="data.video" class="video">
 				<iframe width="100%" height="360" :src="data.video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
 			</div>
-			<!-- <div v-if="data.poster" class="poster">
-				<img :src="data.poster" alt="">
-			</div> -->
 		</div>
 		<div class="info">
-			<p v-if="data.author" class="author">{{data.author}}</p>
 			<h2>{{data.title}}</h2>
-			<p v-if="data.description">{{data.description}}</p>
 		</div>
 	</div>
 </template>
 
 
 <script setup lang="ts">
-import type { press_T } from "~/types";
+import type { video_T } from "~/types";
 defineProps<{
-	data: press_T;
+	data: video_T;
 }>();
 </script>
 
 <style lang="scss" scoped>
 .press_card {
 	width: 100%;
-	max-width: 40rem;
+	max-width: 45rem;
 	height: 100%;
 	margin-bottom: 5rem;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 	display: flex;
 	flex-direction: column;
+	background: $grey;
 
 	.media {
-		width: 100%;
+		align-self: center;
+		width: 35rem;
+		margin: 2.5rem 0;
 		height: 22.5rem;
 		background: #bebebe;
 	}
 
 	.info {
 		padding: 2rem;
+		background: $white;
 
-		.author {
-			margin: 2rem 0;
-			text-transform: capitalize;
-			font-weight: normal;
-
-			display: flex;
-			align-items: center;
-
-			&:before {
-				content: '';
-				width: 2rem;
-				height: 2rem;
-				border-radius: 50%;
-				margin-right: 1rem;
-				background: $dark-grey;
-			}
-		}
 
 		h2 {
 			font-size: 2rem;
 			line-height: 3rem;
+			font-weight: normal;
 
 			// margin-bottom: 2rem;
 			&::first-letter {
@@ -84,6 +67,9 @@ defineProps<{
 		margin-bottom: 15vw;
 
 		.media {
+			width: 100%;
+			margin: 0;
+
 			height: 18rem;
 
 			iframe {

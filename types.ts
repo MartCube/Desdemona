@@ -34,10 +34,15 @@ export interface ContactForm {
 	message: string;
 }
 // Press
-export interface press_T {
-	video?: string,
-	poster?: string,
-	author?: string,
+export interface video_T {
 	title: string,
+	poster?: string,
+	video: string,
+}
+// Press Articles
+export interface article_T {
+	title: string,
+	poster: string,
+	link?: string,
 	description?: string,
 }
