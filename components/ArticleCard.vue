@@ -110,6 +110,11 @@ defineProps<{
 		margin-bottom: 15vw;
 		padding: 2.5rem 1rem;
 
+		img {
+			width: 100%;
+			height: 100%;
+			max-width: 18rem;
+		}
 	}
 }
 </style>
