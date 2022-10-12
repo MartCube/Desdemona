@@ -8,10 +8,16 @@
 				<h3>{{data.subtitle}}</h3>
 			</div>
 		</div>
-		<p v-if="description">{{data.description}}</p>
-		<NuxtLink v-if="data.link" :to="data.link" target="_blank">
-			visit katafangaisland.com
-		</NuxtLink>
+		<p v-if="description">
+			{{data.description}}
+			<template v-if="data.link">
+				<NuxtLink :to="data.link" target="_blank">
+					visit katafangaisland.com
+					<Icon name="arrow" />
+				</NuxtLink>
+			</template>
+		</p>
+
 	</div>
 </template>
 
