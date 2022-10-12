@@ -18,7 +18,7 @@
 						</div>
 					</NuxtLink>
 				</div>
-				<NuxtLink class="main_card" to="/press" target="_blank">
+				<NuxtLink class="main_card" to="/press">
 					<div class="gradient"></div>
 					<img v-lazy="pressVideos[2].poster">
 					<div class="info">

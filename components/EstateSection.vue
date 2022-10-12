@@ -4,7 +4,10 @@
 			<h3 class="subtitle">select properties</h3>
 			<h2 class="title">real estate</h2>
 			<div class="grid">
-				<EstateCard v-for="item in data" :data="item" />
+				<nuxt-link v-for="item in data" :key="item.title" to="/real-estate">
+					<EstateCard :data="item" />
+				</nuxt-link>
+
 			</div>
 			<NuxtLink class="link" to='/real-estate'>learn more</NuxtLink>
 		</div>
@@ -28,14 +31,21 @@ const data = estate.slice(0, 3);
 		display: flex;
 		justify-content: space-between;
 
-		.estate_card {
-			margin: 0;
+		a {
+			width: 30%;
+			text-decoration: none;
 
-			.image {
-				height: 100%;
+			.estate_card {
+				width: 100%;
 				margin: 0;
+
+				.image {
+					height: 100%;
+					margin: 0;
+				}
 			}
 		}
+
 	}
 }
 
